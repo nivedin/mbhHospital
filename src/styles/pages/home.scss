@@ -45,7 +45,7 @@
               display: none;
             }
           }
-          span {
+          strong {
             font-weight: 700;
             color: $blue;
           }
@@ -61,12 +61,13 @@
         p {
           margin-top: 20px;
           font-size: 1.2rem;
+          display: flex;
           @media only screen and (max-width: 700px) {
             font-size: 1rem;
             text-align: center;
             margin: 20px auto 0 auto;
           }
-          span {
+          strong {
             color: $blue;
             font-weight: 600;
           }
@@ -91,6 +92,8 @@
           }
           @media only screen and (max-width: 700px) {
             margin: 32px auto 0 auto;
+            width: 240px;
+            height: 60px;
           }
         }
         .mobDisplay {
@@ -98,10 +101,11 @@
 
           @media only screen and (max-width: 700px) {
             display: block;
-            margin: 0 auto;
             .ctaBtn {
               background: #fff;
               color: $blue;
+              width: 240px;
+              margin: 40px auto 0 auto;
             }
           }
         }
@@ -160,13 +164,15 @@
       .cdSubHead {
         text-align: center;
         h2 {
-          font-size: 3.5rem;
+          font-size: 3rem;
           font-weight: 400;
+          display: flex;
+          justify-content: center;
           @media only screen and (max-width: 700px) {
             margin-top: 10px;
             font-size: 1.4rem;
           }
-          span {
+          strong {
             color: $blue;
             font-weight: 600;
           }
@@ -238,14 +244,14 @@
               display: none;
             }
           }
-          span {
+          strong {
             font-weight: 700;
             color: $blue;
           }
         }
       }
       p {
-        font-size: 1.2rem;
+        font-size: 1.05rem;
         font-weight: 500;
         line-height: 35px;
         width: 80%;
@@ -307,12 +313,14 @@
           font-size: 4rem;
           font-weight: 400;
           line-height: 80px;
+          display: flex;
+          justify-content: center;
           @media only screen and (max-width: 700px) {
-            font-size: 2rem;
+            font-size: 1.75rem;
             line-height: 40px;
           }
 
-          span {
+          strong {
             font-weight: 700;
             color: $blue;
           }
@@ -339,8 +347,8 @@
             min-width: 10rem;
           }
           img {
-            height: 100px;
-            width: 100px;
+            height: 80px;
+            width: 80px;
             margin-bottom: 36px;
             transition: all 0.25s linear;
             @media only screen and (max-width: 700px) {
@@ -348,7 +356,7 @@
               width: 70px;
             }
           }
-          span {
+          strong {
             font-size: 1.2rem;
             font-weight: 500;
             @media only screen and (max-width: 700px) {
@@ -368,8 +376,8 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          width: 503px;
-          height: 80px;
+          width: 460px;
+          height: 75px;
           background: $blue;
           border-radius: 15px;
           color: #fff;
@@ -423,7 +431,7 @@
               display: none;
             }
           }
-          span {
+          strong {
             font-weight: 700;
             color: $blue;
           }
@@ -433,7 +441,7 @@
         width: 100%;
         //overflow-x: scroll;
         .galleryInsideContainer {
-          padding: 3% 0%;
+          padding: 3% 15%;
           display: flex;
           flex-wrap: wrap;
           gap: 60px;
@@ -450,7 +458,7 @@
         }
 
         .promoterPhoto {
-          min-width: 20rem;
+          width: 12rem;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -470,7 +478,7 @@
           span {
             padding: 20px 0;
             font-weight: 600;
-            font-size: 24px;
+            font-size: 18px;
             color: #161616;
             @media only screen and (max-width: 700px) {
               font-size: 14px;
@@ -496,9 +504,12 @@
           font-size: 4rem;
           font-weight: 400;
           line-height: 80px;
+          display: flex;
+          justify-content: flex-end;
           @media only screen and (max-width: 700px) {
             font-size: 2rem;
             text-align: center;
+            justify-content: center;
           }
           &::after {
             content: "";
@@ -513,7 +524,7 @@
               display: none;
             }
           }
-          span {
+          strong {
             font-weight: 700;
             color: $blue;
           }
@@ -612,11 +623,11 @@
           font-weight: 400;
           @media only screen and (max-width: 700px) {
             font-size: 1.8rem;
-            width: 40%;
+            width: 100%;
             text-align: center;
             margin: 0 auto;
           }
-          span {
+          strong {
             color: $blue;
           }
         }

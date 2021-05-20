@@ -55,12 +55,15 @@ function Home() {
             <Fade cascade bottom>
               <h1>
                 <Fade bottom cascade>
-                  Welcome to <span>MBH.</span>
+                  Welcome to <strong>MBH.</strong>
                 </Fade>
               </h1>
 
               <p>
-                Enhancing <span>life,</span> Excelling in <span>care.</span>{" "}
+                <Fade bottom cascade>
+                  Enhancing <strong>life,</strong> Excelling in{" "}
+                  <strong>care.</strong>{" "}
+                </Fade>
               </p>
               <Link to="/" className="ctaBtn">
                 Book Appointment
@@ -90,7 +93,7 @@ function Home() {
             <div className="cdSubHead">
               <h2>
                 <Fade bottom cascade>
-                  <span>MBH</span> Covid Details
+                  <strong>MBH</strong> Covid Details
                 </Fade>
               </h2>
             </div>
@@ -123,7 +126,7 @@ function Home() {
           <Fade cascade bottom>
             <div className="aboutHead">
               <h1>
-                About <span>MBH.</span>
+                About <strong>MBH.</strong>
               </h1>
             </div>
             <p>
@@ -160,7 +163,9 @@ function Home() {
         <section className="facilites">
           <div className="facilitiesHead">
             <h1>
-              Explore our <span>Facilities</span>{" "}
+              <Fade bottom cascade>
+                Explore our <strong>Facilities</strong>{" "}
+              </Fade>
             </h1>
           </div>
           <div className="facilitiesContainer">
@@ -214,7 +219,9 @@ function Home() {
         <section className="promotersMBH">
           <div className="promotersHead">
             <h1>
-              Promoters Of <span>MBH</span>
+              <Fade bottom cascade>
+                Promoters Of <strong>MBH</strong>
+              </Fade>
             </h1>
           </div>
           <div className="promotersGallery">
@@ -242,7 +249,9 @@ function Home() {
         <section className="gallery">
           <div className="galleryHead">
             <h1>
-              <span>MBH</span> Gallery.
+              <Fade bottom cascade>
+                <strong>MBH</strong> Gallery.
+              </Fade>
             </h1>
           </div>
           <div className="galleryCarousel">
@@ -269,7 +278,7 @@ function Home() {
           </div>
           <div className="galleryHelp">
             <h2>
-              Still <span>need</span> help ?
+              Still <strong>need</strong> help ?
             </h2>
             <Link to="/contact">Contact Us</Link>
           </div>

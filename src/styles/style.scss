@@ -95,8 +95,10 @@ nav {
           display: flex;
           justify-content: center;
           align-items: center;
+          cursor: pointer;
         }
         span {
+          pointer-events: all;
           position: absolute;
           background: $blue;
           height: 3px;
@@ -127,6 +129,8 @@ nav {
       }
       &:hover {
         span {
+          cursor: pointer;
+
           &::before {
             width: 30px;
             background: $blue;
@@ -158,6 +162,7 @@ nav {
       transition: all 0.25s ease-in-out;
       .mobHeaderContainer {
         .mobHeadCloseBtn {
+          cursor: pointer;
           height: 50px;
           width: 50px;
           position: absolute;
@@ -406,8 +411,8 @@ footer {
           }
         }
         &:hover {
-          color: $blue;
-          background: #fff;
+          color: #fff;
+          background: $blue;
           path {
             fill: #fff;
           }

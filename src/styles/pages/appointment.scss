@@ -1,0 +1,62 @@
+.appointment {
+  padding: 10% 6%;
+  min-height: 100vh;
+  .appointmentSection {
+    h1 {
+      font-size: 4rem;
+      font-weight: 400;
+      text-align: center;
+      span {
+        font-weight: 600;
+        color: $blue;
+      }
+    }
+    .appointmentForm {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 50%;
+      margin: 50px auto 20px auto;
+      form {
+        width: 100%;
+        .form-group {
+          display: flex;
+          flex-direction: column;
+          label {
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: $blue;
+          }
+          input,
+          select {
+            margin: 16px 0 25px 0;
+            width: 100%;
+            padding: 1.4% 2%;
+            font-size: 1.2rem;
+            font-weight: 500;
+            border-radius: 10px;
+            border: 3px solid #ebebeb;
+            outline: none;
+          }
+        }
+        button {
+          margin-top: 30px;
+          width: 100%;
+          padding: 2% 0;
+          border: 3px solid $blue;
+          background: $blue;
+          border-radius: 10px;
+          color: #fff;
+          font-size: 1.5rem;
+          font-weight: 500;
+          transition: all 0.25s linear;
+          cursor: pointer;
+          &:hover {
+            background: transparent;
+            color: $blue;
+          }
+        }
+      }
+    }
+  }
+}

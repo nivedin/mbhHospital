@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 function Header() {
   const dotLink = useRef(null);
+  const location = useLocation();
   const [pathLocation, setLocation] = useState("/home");
   const [activeNav, setActiveNav] = useState(false);
   const [isNavOpen, setOpenNav] = useState(false);
@@ -31,6 +32,7 @@ function Header() {
   };
 
   window.addEventListener("scroll", changeNav);
+  console.log(location.pathname);
 
   return (
     <nav>
@@ -93,10 +95,14 @@ function Header() {
           <div className="mobHeadHamBtn">
             <span onClick={() => setOpenNav(!isNavOpen)}></span>
           </div>
-          {!activeNav ? (
-            <Link to="/contact">Contact Us</Link>
+          {location.pathname === "/" ? (
+            !activeNav ? (
+              <Link to="/contact">Contact Us</Link>
+            ) : (
+              <Link to="/appointment">Book Appointment</Link>
+            )
           ) : (
-            <Link to="/appointments">Book Appointment</Link>
+            <Link to="/appointment">Book Appointment</Link>
           )}
         </div>
       </div>
@@ -109,6 +115,7 @@ function Header() {
           <ul>
             <li>
               <NavLink
+                onClick={() => setOpenNav(!isNavOpen)}
                 to="/"
                 activeClassName="active-link"
                 isActive={(match, location) => {
@@ -119,22 +126,38 @@ function Header() {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/department" activeClassName="active-link">
+              <NavLink
+                onClick={() => setOpenNav(!isNavOpen)}
+                to="/department"
+                activeClassName="active-link"
+              >
                 Departments
               </NavLink>
             </li>
             <li>
-              <NavLink to="/facilities" activeClassName="active-link">
+              <NavLink
+                onClick={() => setOpenNav(!isNavOpen)}
+                to="/facilities"
+                activeClassName="active-link"
+              >
                 Facilities
               </NavLink>
             </li>
             <li>
-              <NavLink to="/careers" activeClassName="active-link">
+              <NavLink
+                onClick={() => setOpenNav(!isNavOpen)}
+                to="/careers"
+                activeClassName="active-link"
+              >
                 Careers
               </NavLink>
             </li>
             <li className="bookAptBtn">
-              <NavLink to="/appointments" activeClassName="active-link">
+              <NavLink
+                onClick={() => setOpenNav(!isNavOpen)}
+                to="/appointment"
+                activeClassName="active-link"
+              >
                 Book Appointments
               </NavLink>
             </li>
