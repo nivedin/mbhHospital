@@ -24,7 +24,9 @@ function Header() {
 
   const changeNav = () => {
     let windoScrollY = window.scrollY;
-    if (windoScrollY > 500) {
+    let changeScrollY = 500;
+    pathLocation === "/" ? (changeScrollY = 500) : (changeScrollY = 100);
+    if (windoScrollY > changeScrollY) {
       setActiveNav(true);
     } else {
       setActiveNav(false);
