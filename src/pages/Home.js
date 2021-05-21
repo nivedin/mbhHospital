@@ -301,18 +301,7 @@ function Home() {
             <h2>
               Still <strong>need</strong> help ?
             </h2>
-            <Link
-              to="/"
-              onClick={() =>
-                window.scrollTo({
-                  top: document.body.scrollHeight,
-                  left: 0,
-                  behavior: "smooth",
-                })
-              }
-            >
-              Contact Us
-            </Link>
+            <a href="tel:04832734543">Contact Us</a>
           </div>
         </section>
       </div>
