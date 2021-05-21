@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.ec86163f.chunk.css",
-    "main.js": "/static/js/main.98d94a8f.chunk.js",
-    "main.js.map": "/static/js/main.98d94a8f.chunk.js.map",
+    "main.css": "/static/css/main.8f5365ee.chunk.css",
+    "main.js": "/static/js/main.20cc9730.chunk.js",
+    "main.js.map": "/static/js/main.20cc9730.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ce9e1838.js",
     "runtime-main.js.map": "/static/js/runtime-main.ce9e1838.js.map",
     "static/css/2.19627560.chunk.css": "/static/css/2.19627560.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.64735ce3.chunk.js.map": "/static/js/2.64735ce3.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.19627560.chunk.css.map": "/static/css/2.19627560.chunk.css.map",
-    "static/css/main.ec86163f.chunk.css.map": "/static/css/main.ec86163f.chunk.css.map",
+    "static/css/main.8f5365ee.chunk.css.map": "/static/css/main.8f5365ee.chunk.css.map",
     "static/js/2.64735ce3.chunk.js.LICENSE.txt": "/static/js/2.64735ce3.chunk.js.LICENSE.txt",
     "static/media/emergency.bca69d35.svg": "/static/media/emergency.bca69d35.svg",
     "static/media/facebook.3f950362.svg": "/static/media/facebook.3f950362.svg",
@@ -24,7 +24,7 @@
     "static/js/runtime-main.ce9e1838.js",
     "static/css/2.19627560.chunk.css",
     "static/js/2.64735ce3.chunk.js",
-    "static/css/main.ec86163f.chunk.css",
-    "static/js/main.98d94a8f.chunk.js"
+    "static/css/main.8f5365ee.chunk.css",
+    "static/js/main.20cc9730.chunk.js"
   ]
 }

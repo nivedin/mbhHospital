@@ -72,11 +72,13 @@ function Home() {
 
                 <div className="mobDisplay">
                   <span
-                    onClick={window.scrollTo({
-                      top: document.body.scrollHeight,
-                      left: 0,
-                      behavior: "smooth",
-                    })}
+                    onClick={() =>
+                      window.scrollTo({
+                        top: document.body.scrollHeight,
+                        left: 0,
+                        behavior: "smooth",
+                      })
+                    }
                     className="ctaBtn"
                   >
                     Contact Us
@@ -164,7 +166,7 @@ function Home() {
             </p>
             <div className="btnGrp">
               <Link to="/facilities">Facilities</Link>
-              <Link className="dptBtn" to="/departments">
+              <Link className="dptBtn" to="/department">
                 Departments
               </Link>
             </div>
@@ -299,7 +301,18 @@ function Home() {
             <h2>
               Still <strong>need</strong> help ?
             </h2>
-            <Link to="/contact">Contact Us</Link>
+            <Link
+              to="/"
+              onClick={() =>
+                window.scrollTo({
+                  top: document.body.scrollHeight,
+                  left: 0,
+                  behavior: "smooth",
+                })
+              }
+            >
+              Contact Us
+            </Link>
           </div>
         </section>
       </div>

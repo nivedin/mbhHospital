@@ -99,7 +99,18 @@ function Header() {
           </div>
           {location.pathname === "/" ? (
             !activeNav ? (
-              <Link to="/contact">Contact Us</Link>
+              <span
+                className="contactUsBtn"
+                onClick={() =>
+                  window.scrollTo({
+                    top: document.body.scrollHeight,
+                    left: 0,
+                    behavior: "smooth",
+                  })
+                }
+              >
+                Contact Us
+              </span>
             ) : (
               <Link to="/appointment" className="bookAptBtn">
                 Book Appointment

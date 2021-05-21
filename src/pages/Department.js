@@ -29,7 +29,9 @@ function Department() {
   return (
     <div className="department">
       <div className="departmentContainer">
-        <h1>Our Departments</h1>
+        <h1>
+          Our <strong style={{ color: "#005ea4" }}>Departments</strong>{" "}
+        </h1>
         <div className="doctorForm">
           <div className="form-group">
             <label htmlFor="selectDpt">Select Prefered Department</label>

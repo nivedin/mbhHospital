@@ -80,9 +80,17 @@ function Application() {
                 <Link to="/">
                   <span> Return Home </span>
                 </Link>
-                <Link to="/contact">
+                <div
+                  onClick={() =>
+                    window.scrollTo({
+                      top: document.body.scrollHeight,
+                      left: 0,
+                      behavior: "smooth",
+                    })
+                  }
+                >
                   <span>Contact Us </span>
-                </Link>
+                </div>
               </div>
             </div>
           )}
