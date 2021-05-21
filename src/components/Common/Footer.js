@@ -64,7 +64,10 @@ function Footer() {
         </div>
       </div>
       <div className="footer">
-        <p>&#169; 2021 MBH All right reserved</p>
+        <p>
+          &#169; 2021 <strong style={{ color: "#005ea4" }}>MBH</strong> All
+          right reserved
+        </p>
         <p>
           Powered by <a href="htpps://www.odditty.com">Odditty</a>{" "}
         </p>

@@ -61,7 +61,7 @@ function Application() {
               </div>
               <div className="form-group">
                 <label htmlFor="name">Why should we hire you ?</label>
-                <input type="text" name="reason" />
+                <textarea type="text" name="reason" />
               </div>
               <input readOnly type="text" hidden value={role} />
               <button type="submit">Confirm Application</button>

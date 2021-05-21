@@ -35,7 +35,8 @@
             }
           }
           input,
-          select {
+          select,
+          textarea {
             margin: 16px 0 25px 0;
             width: 100%;
             padding: 1.4% 2%;
@@ -97,7 +98,7 @@
           border-radius: 10px;
           margin: 100px auto 60px auto;
           background: $blue;
-          font-size: 2rem;
+          font-size: 1.4rem;
           font-weight: 500;
           padding: 2%;
           border: 3px solid $blue;

@@ -2,8 +2,8 @@ import { Link, useParams } from "react-router-dom";
 import careersList from "../util/careersList";
 
 function Careers() {
-  let { id } = useParams();
-  console.log(id);
+  // let { id } = useParams();
+  //console.log(id);
 
   return (
     <div className="careers">

@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 function Facilities() {
   const settings = {
-    //autoplay: true,
+    autoplay: true,
     autoplaySpeed: 2000,
     pauseOnHover: true,
     className: "center",

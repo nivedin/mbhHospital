@@ -25,7 +25,7 @@ function Department() {
     });
   };
 
-  console.log(department, doctors, dptDesc);
+  //console.log(department, doctors, dptDesc);
   return (
     <div className="department">
       <div className="departmentContainer">

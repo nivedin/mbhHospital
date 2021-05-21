@@ -90,12 +90,13 @@
           justify-content: center;
           align-items: center;
           padding: 0 20px;
-          border: 1px solid $blue;
+          border: 3px solid $blue;
           transition: all 0.25s linear;
           width: fit-content;
           &:hover {
             background: #fff;
             color: $blue;
+            font-weight: 600;
           }
           @media only screen and (max-width: 700px) {
             margin: 50px auto 0 auto;
@@ -298,7 +299,7 @@
           font-weight: 600;
           font-size: 1.2rem;
           color: #fff;
-          border: 1px solid $blue;
+          border: 3px solid $blue;
           transition: all 0.25s linear;
           @media only screen and (max-width: 700px) {
             width: 100%;
@@ -312,10 +313,11 @@
         :nth-child(2) {
           background: #fff;
           color: $blue;
-          border: 2px solid #e1e1e1;
+          border: 3px solid #e1e1e1;
           &:hover {
             background: $blue;
             color: #fff;
+            border: 3px solid $blue;
           }
         }
       }
@@ -409,7 +411,7 @@
           color: #fff;
           font-size: 1.2rem;
           font-weight: 500;
-          border: 2px solid $blue;
+          border: 3px solid $blue;
           transition: all 0.25s linear;
           @media only screen and (max-width: 700px) {
             width: 100%;
@@ -669,7 +671,7 @@
           color: #fff;
           font-size: 1.5rem;
           font-weight: 500;
-          border: 2px solid $blue;
+          border: 3px solid $blue;
           transition: all 0.25s linear;
           @media only screen and (max-width: 700px) {
             width: 90%;
