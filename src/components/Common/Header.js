@@ -32,7 +32,7 @@ function Header() {
   };
 
   window.addEventListener("scroll", changeNav);
-  console.log(location.pathname);
+  //console.log(location.pathname);
 
   return (
     <nav>
@@ -99,10 +99,14 @@ function Header() {
             !activeNav ? (
               <Link to="/contact">Contact Us</Link>
             ) : (
-              <Link to="/appointment">Book Appointment</Link>
+              <Link to="/appointment" className="bookAptBtn">
+                Book Appointment
+              </Link>
             )
           ) : (
-            <Link to="/appointment">Book Appointment</Link>
+            <Link to="/appointment" className="bookAptBtn">
+              Book Appointment
+            </Link>
           )}
         </div>
       </div>

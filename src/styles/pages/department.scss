@@ -1,0 +1,96 @@
+.department {
+  min-height: 100vh;
+  .departmentContainer {
+    padding: 10% 6%;
+    @media only screen and (max-width: 700px) {
+      padding: 10% 3%;
+    }
+    h1 {
+      font-size: 4rem;
+      text-align: center;
+      font-weight: 400;
+      @media only screen and (max-width: 700px) {
+        font-size: 2rem;
+      }
+    }
+    .doctorForm {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 70%;
+      margin: 60px auto;
+      @media only screen and (max-width: 700px) {
+        width: 100%;
+      }
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        label {
+          font-size: 1.6rem;
+          font-weight: 500;
+          color: $blue;
+          @media only screen and (max-width: 700px) {
+            font-size: 1.1rem;
+            text-align: center;
+          }
+        }
+        select {
+          margin: 16px 0 25px 0;
+          width: 100%;
+          padding: 1.4% 2%;
+          font-size: 1.2rem;
+          font-weight: 500;
+          border-radius: 10px;
+          border: 3px solid #ebebeb;
+          outline: none;
+          @media only screen and (max-width: 700px) {
+            padding: 4% 3%;
+            font-size: 1.08rem;
+          }
+        }
+      }
+    }
+    .availableDoctors {
+      width: 70%;
+      margin: 60px auto;
+      padding: 0 2%;
+      @media only screen and (max-width: 700px) {
+        width: 100%;
+      }
+      h3 {
+        font-size: 1.6rem;
+        color: $blue;
+        font-weight: 500;
+        @media only screen and (max-width: 700px) {
+          text-align: center;
+        }
+      }
+      ul {
+        margin-top: 30px;
+        list-style: none;
+        @media only screen and (max-width: 700px) {
+          text-align: center;
+        }
+        li {
+          font-weight: 500;
+          font-size: 1.1rem;
+          margin-bottom: 10px;
+          @media only screen and (max-width: 700px) {
+            line-height: 25px;
+            margin-bottom: 30px;
+          }
+          text-transform: uppercase;
+          &::before {
+            content: "\2022";
+            color: $blue;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+          }
+        }
+      }
+    }
+  }
+}

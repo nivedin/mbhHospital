@@ -1,0 +1,53 @@
+.careers {
+  min-height: 100vh;
+  padding: 10% 4%;
+  .careersContainer {
+    width: 80%;
+    margin: 0 auto;
+    @media only screen and (max-width: 700px) {
+      width: 100%;
+    }
+    h1 {
+      font-size: 4rem;
+      text-align: center;
+      font-weight: 400;
+      @media only screen and (max-width: 700px) {
+        font-size: 2rem;
+      }
+      strong {
+        font-weight: 600;
+        color: $blue;
+      }
+    }
+    .tableContainer {
+      margin: 60px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      table {
+        width: 100%;
+
+        th,
+        td {
+          padding: 20px 15px;
+          text-align: center;
+          border-bottom: 2px solid #e5e5e5;
+          span {
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            left: 10px;
+            top: 42%;
+            background: $blue;
+            content: "";
+          }
+        }
+        a {
+          color: $blue;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

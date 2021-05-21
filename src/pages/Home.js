@@ -77,7 +77,7 @@ function Home() {
             </Fade>
           </div>
           <div className="rightContainer">
-            <img src="/images/heroMain.png" alt="hero-mbh-hospital" />
+            {/* <img src="/images/heroMain.png" alt="hero-mbh-hospital" /> */}
           </div>
         </section>
         <section className="covidDetails">

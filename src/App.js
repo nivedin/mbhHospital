@@ -10,6 +10,7 @@ import Header from "./components/Common/Header";
 import FloatingEmergency from "./components/Common/FloatingEmergency";
 import Footer from "./components/Common/Footer";
 import Appointment from "./pages/Appointment";
+import Application from "./pages/Application";
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
           </Route>
           <Route exact path="/appointment">
             <Appointment />
+          </Route>
+          <Route exact path="/careers/:id">
+            <Application />
           </Route>
         </Switch>
         <FloatingEmergency />
