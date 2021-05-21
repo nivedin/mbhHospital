@@ -65,14 +65,21 @@ function Home() {
                   <strong>care.</strong>{" "}
                 </Fade>
               </p>
-              <Link to="/" className="ctaBtn">
+              <Link to="/appointment" className="ctaBtn">
                 Book Appointment
               </Link>
 
               <div className="mobDisplay">
-                <Link to="/" className="ctaBtn">
+                <span
+                  onClick={window.scrollTo({
+                    top: document.body.scrollHeight,
+                    left: 0,
+                    behavior: "smooth",
+                  })}
+                  className="ctaBtn"
+                >
                   Contact Us
-                </Link>
+                </span>
               </div>
             </Fade>
           </div>

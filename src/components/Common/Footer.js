@@ -6,7 +6,7 @@ import { Link, NavLink } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer>
+    <footer id="#footer">
       <div className="footerRow1">
         <div className="leftRow1">
           <Link to="/contact">24/7 Emergency</Link>
@@ -42,7 +42,7 @@ function Footer() {
               </NavLink>
             </li>
             <li>
-              <NavLink exact to="/departments" activeClassName="active-link">
+              <NavLink exact to="/department" activeClassName="active-link">
                 Departments
               </NavLink>
             </li>
@@ -51,7 +51,7 @@ function Footer() {
         <div className="socialLinkConatiner">
           <p>Follow Us</p>
           <div className="socialLinks">
-            <a href="https://www.facebook.com/MB-Hospital-104202173769193/">
+            <a href="https://www.facebook.com/mbhospitalmlp/">
               <FacebookSvg />
             </a>
             <a href="/">
