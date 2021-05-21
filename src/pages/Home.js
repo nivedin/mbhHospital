@@ -139,26 +139,28 @@ function Home() {
               </h1>
             </div>
             <p>
-              Get to know us better!
-              <br /> MB Hospital is an accomplished health care facility with
-              staffs who are adroit in their abilities to provide you with
-              outstanding service. It was founded in 1989 with an aim to promote
-              wellness and provide healthcare for all with the best kinds of
-              services and is successfully achieving milestones ever since. We
-              began as a 50 bed treatment facility positioned on NH 213 at
-              Varangode, Down Hill. 42 years into our inception, we've grown
-              into a 5-floor, 250 bed healthcare facility with all the modern
-              infrastructure and treatment mechanisms. The hospital now spans
-              over 4 acres of land with a wide space for parking. Our team has
-              received words of appreciation and applause from the Government
-              and the public for our excellence in treating patients and success
-              in conducting other humanitarian activities. MB Hospital was
-              awarded by the Government of Kerala for being the first to
-              introduce waste water treatment technology in Malappuram. From
-              diagnostic tests to surgical procedures, our ongoing investment in
-              state-of-the-art technology ensures patients receive the highest
-              quality of care. With a strong history of well served patients, we
-              offer to provide you with best of care and cure!
+              <em>Get to know us better!</em>
+              <br />{" "}
+              <strong style={{ color: "#005ea4" }}>MB Hospital LLP</strong> is
+              an accomplished health care facility with staffs who are adroit in
+              their abilities to provide you with outstanding service. It was
+              founded in 1989 with an aim to promote wellness and provide
+              healthcare for all with the best kinds of services and is
+              successfully achieving milestones ever since. We began as a 50 bed
+              treatment facility positioned on NH 213 at Varangode, Down Hill.
+              42 years into our inception, we've grown into a 5-floor, 250 bed
+              healthcare facility with all the modern infrastructure and
+              treatment mechanisms. The hospital now spans over 4 acres of land
+              with a wide space for parking. Our team has received words of
+              appreciation and applause from the Government and the public for
+              our excellence in treating patients and success in conducting
+              other humanitarian activities. MB Hospital was awarded by the
+              Government of Kerala for being the first to introduce waste water
+              treatment technology in Malappuram. From diagnostic tests to
+              surgical procedures, our ongoing investment in state-of-the-art
+              technology ensures patients receive the highest quality of care.
+              With a strong history of well served patients, we offer to provide
+              you with best of care and cure!
             </p>
             <div className="btnGrp">
               <Link to="/facilities">Facilities</Link>
@@ -235,22 +237,30 @@ function Home() {
           </div>
           <div className="promotersGallery">
             <div className="galleryInsideContainer">
-              <div className="promoterPhoto">
-                <img src="/images/promoter-1.png" alt="promoter-MBH" />
-                <span>Dr. Abdul Majeed</span>
-              </div>
-              <div className="promoterPhoto">
-                <img src="/images/promoter-2.png" alt="promoter-MBH" />
-                <span>Mr. E. Ummer Bava</span>
-              </div>
-              <div className="promoterPhoto">
-                <img src="/images/promoter-3.png" alt="promoter-MBH" />
-                <span>Dr. Badharudheen</span>
-              </div>
-              <div className="promoterPhoto">
-                <img src="/images/promoter-4.png" alt="promoter-MBH" />
-                <span>Mr. Nasrudheen</span>
-              </div>
+              <Fade cascade bottom>
+                <div className="promoterPhoto">
+                  <img src="/images/promoter-1.png" alt="promoter-MBH" />
+                  <span>Dr. Abdul Majeed</span>
+                </div>
+              </Fade>
+              <Fade cascade bottom>
+                <div className="promoterPhoto">
+                  <img src="/images/promoter-2.png" alt="promoter-MBH" />
+                  <span>Mr. E. Ummer Bava</span>
+                </div>
+              </Fade>
+              <Fade cascade bottom>
+                <div className="promoterPhoto">
+                  <img src="/images/promoter-3.png" alt="promoter-MBH" />
+                  <span>Dr. Badharudheen</span>
+                </div>
+              </Fade>
+              <Fade cascade bottom>
+                <div className="promoterPhoto">
+                  <img src="/images/promoter-4.png" alt="promoter-MBH" />
+                  <span>Mr. Nasrudheen</span>
+                </div>
+              </Fade>
             </div>
           </div>
         </section>

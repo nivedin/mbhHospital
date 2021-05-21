@@ -9,11 +9,11 @@ function Footer() {
     <footer id="#footer">
       <div className="footerRow1">
         <div className="leftRow1">
-          <Link to="/contact">24/7 Emergency</Link>
-          <Link to="/contact">Help Desk</Link>
+          <a href="tel:9526903838">24/7 Emergency</a>
+          <a href="tel:04832734543">Help Desk</a>
         </div>
         <div className="rightRow1">
-          <a href="/">
+          <a href="https://goo.gl/maps/VtTPN7ALcLrivkG4A">
             <span>
               Navigate to <strong>MBH</strong>{" "}
             </span>
