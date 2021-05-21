@@ -69,7 +69,7 @@ function Footer() {
           right reserved
         </p>
         <p>
-          Powered by <a href="htpps://www.odditty.com">Odditty</a>{" "}
+          Powered by <a href="htpps://www.odditty.in">Odditty</a>{" "}
         </p>
       </div>
     </footer>

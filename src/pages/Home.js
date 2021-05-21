@@ -239,12 +239,12 @@ function Home() {
           </div>
           <div className="promotersGallery">
             <div className="galleryInsideContainer">
-              <Fade cascade bottom>
+              {/* <Fade cascade bottom>
                 <div className="promoterPhoto">
                   <img src="/images/promoter-1.png" alt="promoter-MBH" />
                   <span>Dr. Abdul Majeed</span>
                 </div>
-              </Fade>
+              </Fade> */}
               <Fade cascade bottom>
                 <div className="promoterPhoto">
                   <img src="/images/promoter-2.png" alt="promoter-MBH" />
