@@ -81,7 +81,7 @@ nav {
         justify-content: center;
         align-items: center;
         padding: 0 30px;
-        border-radius: 15px;
+        border-radius: 10px;
         font-size: 1.2rem;
         font-weight: 600;
         transition: all 0.25s linear;
@@ -117,6 +117,7 @@ nav {
           width: 30px;
           transition: all 0.25s ease-in-out;
           transform: translate(0, 50%);
+          border-radius: 15px;
           &::before {
             position: absolute;
             bottom: -8px;
@@ -126,6 +127,7 @@ nav {
             width: 20px;
             background: $blue;
             transition: all 0.25s ease-in-out;
+            border-radius: 15px;
           }
           &::after {
             position: absolute;
@@ -136,6 +138,7 @@ nav {
             width: 40px;
             background: $blue;
             transition: all 0.25s ease-in-out;
+            border-radius: 15px;
           }
         }
       }
@@ -233,7 +236,7 @@ nav {
           .bookAptBtn {
             background: white;
             padding: 20px 20px;
-            border-radius: 15px;
+            border-radius: 10px;
             margin-top: 60px;
             a {
               color: $blue;
@@ -355,7 +358,7 @@ footer {
         justify-content: center;
         align-items: center;
         border: 1px solid #e1e1e1;
-        border-radius: 15px;
+        border-radius: 10px;
         width: 207px;
         height: 80px;
         font-size: 1.4rem;
@@ -392,7 +395,7 @@ footer {
       }
       a {
         border: 1px solid #e1e1e1;
-        border-radius: 15px;
+        border-radius: 10px;
         display: flex;
         justify-content: space-between;
         align-items: center;

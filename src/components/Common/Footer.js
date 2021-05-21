@@ -1,6 +1,6 @@
 import { ReactComponent as MapSvg } from "./assets/mapSvg.svg";
 import { ReactComponent as FacebookSvg } from "./assets/facebook.svg";
-import { ReactComponent as TwitterSvg } from "./assets/twitter.svg";
+import { ReactComponent as InstagramSvg } from "./assets/instagram.svg";
 import { ReactComponent as MailSvg } from "./assets/mail.svg";
 import { Link, NavLink } from "react-router-dom";
 
@@ -54,8 +54,8 @@ function Footer() {
             <a href="https://www.facebook.com/mbhospitalmlp/">
               <FacebookSvg />
             </a>
-            <a href="/">
-              <TwitterSvg />
+            <a href="https://www.instagram.com/mb.hospital/">
+              <InstagramSvg />
             </a>
             <a href="mailto:hrmbhospital@gmail.com">
               <MailSvg />

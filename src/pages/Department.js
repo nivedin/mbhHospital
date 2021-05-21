@@ -4,6 +4,7 @@ import departmenDoctors from "../util/departmentDoctors";
 function Department() {
   const [doctors, setDoctors] = useState("");
   const [department, setDepartment] = useState("");
+  const [dptDesc, setDptDesc] = useState("");
   useEffect(() => {
     departmenDoctors.forEach((departmenDoctor, i) => {
       if (departmenDoctor.department === "GENERAL MEDICINE DEPARTMENT") {
@@ -18,12 +19,13 @@ function Department() {
     departmenDoctors.forEach((departmenDoctor, i) => {
       if (departmenDoctor.department === e.target.value) {
         setDoctors(departmenDoctor.doctors);
+        setDptDesc(departmenDoctor.description);
       } else {
       }
     });
   };
 
-  console.log(doctors);
+  console.log(department, doctors, dptDesc);
   return (
     <div className="department">
       <div className="departmentContainer">
@@ -53,6 +55,9 @@ function Department() {
               <h4>No doctors available</h4>
             )}
           </ul>
+        </div>
+        <div className="departmentDesc">
+          {dptDesc ? <p>{dptDesc}</p> : null}
         </div>
       </div>
     </div>
