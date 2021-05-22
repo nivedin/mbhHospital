@@ -6,9 +6,10 @@ function Department() {
   const [department, setDepartment] = useState("");
   const [dptDesc, setDptDesc] = useState("");
   useEffect(() => {
-    departmenDoctors.forEach((departmenDoctor, i) => {
+    departmenDoctors.forEach((departmenDoctor) => {
       if (departmenDoctor.department === "GENERAL MEDICINE DEPARTMENT") {
         setDoctors(departmenDoctor.doctors);
+        setDptDesc(departmenDoctor.description);
         setDepartment("GENERAL MEDICINE DEPARTMENT");
       } else {
       }
