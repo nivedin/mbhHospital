@@ -11,11 +11,13 @@ import FloatingEmergency from "./components/Common/FloatingEmergency";
 import Footer from "./components/Common/Footer";
 import Appointment from "./pages/Appointment";
 import Application from "./pages/Application";
+import ScrollToTop from "./components/Common/ScrollToTop";
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop />
         <Header />
         <Switch>
           <Route exact path="/">

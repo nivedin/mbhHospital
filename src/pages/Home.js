@@ -124,7 +124,7 @@ function Home() {
               </div>
               <div className="cdCount">
                 <span>ICU Bed</span>
-                <CountUp end={4} duration={7} />
+                <CountUp end={3} duration={7} />
               </div>
               <div className="cdCount">
                 <span>Ventilator</span>
