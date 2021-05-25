@@ -40,6 +40,7 @@ function Appointment() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    window.scrollTo(0, 0);
     setValues("");
     setSubmited(true);
     //console.log("values", values);

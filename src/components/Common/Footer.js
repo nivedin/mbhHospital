@@ -2,7 +2,7 @@ import { ReactComponent as MapSvg } from "./assets/mapSvg.svg";
 import { ReactComponent as FacebookSvg } from "./assets/facebook.svg";
 import { ReactComponent as InstagramSvg } from "./assets/instagram.svg";
 import { ReactComponent as MailSvg } from "./assets/mail.svg";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Footer() {
   return (
