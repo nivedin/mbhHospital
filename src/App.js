@@ -5,7 +5,7 @@ import Department from "./pages/Department";
 import Facilities from "./pages/Facilities";
 import Home from "./pages/Home";
 import Careers from "./pages/Careers";
-import Contact from "./pages/Contact";
+// import Contact from "./pages/Contact";
 import Header from "./components/Common/Header";
 import FloatingEmergency from "./components/Common/FloatingEmergency";
 import Footer from "./components/Common/Footer";

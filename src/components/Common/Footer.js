@@ -74,7 +74,7 @@ function Footer() {
           right reserved
         </p>
         <p>
-          Powered by <a href="htpps://www.odditty.in">Odditty</a>{" "}
+          Powered by <a href="https://sparkd.pro/">Sparkd</a>{" "}
         </p>
       </div>
     </footer>

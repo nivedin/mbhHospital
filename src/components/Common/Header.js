@@ -167,6 +167,15 @@ function Header() {
             <li>
               <NavLink
                 onClick={() => setOpenNav(!isNavOpen)}
+                to="/gallery"
+                activeClassName="active-link"
+              >
+                Gallery
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                onClick={() => setOpenNav(!isNavOpen)}
                 to="/facilities"
                 activeClassName="active-link"
               >
