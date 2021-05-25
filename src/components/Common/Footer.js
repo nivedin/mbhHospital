@@ -9,8 +9,16 @@ function Footer() {
     <footer id="#footer">
       <div className="footerRow1">
         <div className="leftRow1">
-          <a href="tel:9526903838">24/7 Emergency</a>
-          <a href="tel:04832734543">Help Desk</a>
+          <p>
+            <span>24/7 Emergency</span>
+            <span>:</span>
+            <span>9526903838</span>
+          </p>
+          <p className="helpDeskNum">
+            <span>Help Desk</span>
+            <span>: </span>
+            <span> 04832734543</span>
+          </p>
         </div>
         <div className="rightRow1">
           <a href="https://goo.gl/maps/VtTPN7ALcLrivkG4A">
@@ -54,17 +62,23 @@ function Footer() {
           </ul>
         </div>
         <div className="socialLinkConatiner">
-          <p>Follow Us</p>
-          <div className="socialLinks">
-            <a href="https://www.facebook.com/mbhospitalmlp/">
-              <FacebookSvg />
-            </a>
-            <a href="https://www.instagram.com/mb.hospital/">
-              <InstagramSvg />
-            </a>
-            <a href="mailto:hrmbhospital@gmail.com">
-              <MailSvg />
-            </a>
+          <div className="accreditedImg">
+            <img src="/images/accreditedLogo.png" alt="accriditedLogo" />
+            <span>NABL Accredited and ICMR Approved laboratory</span>
+          </div>
+          <div>
+            <p>Follow Us</p>
+            <div className="socialLinks">
+              <a href="https://www.facebook.com/mbhospitalmlp/">
+                <FacebookSvg />
+              </a>
+              <a href="https://www.instagram.com/mb.hospital/">
+                <InstagramSvg />
+              </a>
+              <a href="mailto:hrmbhospital@gmail.com">
+                <MailSvg />
+              </a>
+            </div>
           </div>
         </div>
       </div>

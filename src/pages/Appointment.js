@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import emailjs from "emailjs-com";
 import departmenDoctors from "../util/departmentDoctors";
 
 function Appointment() {
@@ -40,6 +41,21 @@ function Appointment() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    emailjs
+      .sendForm(
+        "gmail",
+        "YOUR_TEMPLATE_ID",
+        e.target,
+        "user_GVZ6fF8KzeSjL0wqYtwKR"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
     window.scrollTo(0, 0);
     setValues("");
     setSubmited(true);
