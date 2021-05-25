@@ -19,6 +19,7 @@ function Application() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    window.scrollTo(0, 0);
     setValues({
       name: "",
       phoneNumber: "",
