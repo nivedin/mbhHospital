@@ -45,6 +45,7 @@ function App() {
           <Route exact path="/careers/:id">
             <Application />
           </Route>
+          <Route path="" component={Home} />
         </Switch>
         <FloatingEmergency />
         <Footer />
