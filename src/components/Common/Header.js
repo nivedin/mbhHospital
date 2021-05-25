@@ -13,11 +13,13 @@ function Header() {
       if (pathLocation === "/") {
         dotLink.current.style.left = "6%";
       } else if (pathLocation === "/department") {
-        dotLink.current.style.left = "35%";
+        dotLink.current.style.left = "28%";
+      } else if (pathLocation === "/gallery") {
+        dotLink.current.style.left = "53%";
       } else if (pathLocation === "/facilities") {
-        dotLink.current.style.left = "65%";
+        dotLink.current.style.left = "72%";
       } else if (pathLocation === "/careers") {
-        dotLink.current.style.left = "91%";
+        dotLink.current.style.left = "93%";
       }
     }
   }, [pathLocation]);
@@ -67,6 +69,17 @@ function Header() {
                 activeClassName="active-link"
               >
                 Departments
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/gallery"
+                // isActive={(match, location) => {
+                //   setLocation(location.pathname);
+                // }}
+                activeClassName="active-link"
+              >
+                Gallery
               </NavLink>
             </li>
             <li>

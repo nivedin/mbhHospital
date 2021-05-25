@@ -37,6 +37,11 @@ function Footer() {
               </NavLink>
             </li>
             <li>
+              <NavLink exact to="/gallery" activeClassName="active-link">
+                Gallery
+              </NavLink>
+            </li>
+            <li>
               <NavLink exact to="/careers" activeClassName="active-link">
                 Careers
               </NavLink>

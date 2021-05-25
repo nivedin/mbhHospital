@@ -12,6 +12,7 @@ import Footer from "./components/Common/Footer";
 import Appointment from "./pages/Appointment";
 import Application from "./pages/Application";
 import ScrollToTop from "./components/Common/ScrollToTop";
+import Gallery from "./pages/Gallery";
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
           </Route>
           <Route exact path="/department">
             <Department />
+          </Route>
+          <Route exact path="/gallery">
+            <Gallery />
           </Route>
           <Route exact path="/facilities">
             <Facilities />
