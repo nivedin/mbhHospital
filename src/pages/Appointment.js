@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import emailjs from "emailjs-com";
 import departmenDoctors from "../util/departmentDoctors";
 
 function Appointment() {
+  const departmentRef = useRef(null);
+  const doctorRef = useRef(null);
   const [doctors, setDoctors] = useState("");
   const [values, setValues] = useState({
     name: "",
@@ -41,23 +43,27 @@ function Appointment() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        "gmail",
-        "YOUR_TEMPLATE_ID",
-        e.target,
-        "user_GVZ6fF8KzeSjL0wqYtwKR"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    setValues({
+      ...values,
+      doctor: doctorRef.current.value,
+      department: departmentRef.current.value,
+    });
+    // emailjs
+    //   .sendForm(
+    //     "gmail",
+    //     "YOUR_TEMPLATE_ID",
+    //     e.target,
+    //     "user_GVZ6fF8KzeSjL0wqYtwKR"
+    //   )
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //     }
+    //   );
     window.scrollTo(0, 0);
-    setValues("");
     setSubmited(true);
     //console.log("values", values);
   };
@@ -91,6 +97,7 @@ function Appointment() {
                   name="department"
                   id="dpt"
                   required
+                  ref={departmentRef}
                   onChange={handleDptChange}
                   value={department}
                 >
@@ -110,6 +117,7 @@ function Appointment() {
                   name="doctors"
                   id="doc"
                   required
+                  ref={doctorRef}
                   onChange={(e) =>
                     setValues({ ...values, doctor: e.target.value })
                   }
@@ -156,10 +164,44 @@ function Appointment() {
           ) : (
             <div className="formSubmited">
               <h1>Appointment Request Sent !</h1>
+              <div className="bookingSummary">
+                <h3>Booking Summary</h3>
+                <div className="bookingDetails">
+                  <div className="rowDiv">
+                    <div>
+                      <span>Name : </span>
+                      <span>{name}</span>
+                    </div>
+                    <div>
+                      <span>Date : </span>
+                      <span>{date}</span>
+                    </div>
+                  </div>
+                  <div className="rowDiv">
+                    <div>
+                      <span>Department : </span>
+                      <span>{department}</span>
+                    </div>
+                    <div>
+                      <span>Phone : </span>
+                      <span>{phoneNumber}</span>
+                    </div>
+                  </div>
+                  <div className="rowDiv">
+                    <div>
+                      <span>Doctor : </span>
+                      <span>{doctor}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <Link
                 to="/appointment"
                 className="makeAnotherAptBtn"
-                onClick={() => setSubmited(false)}
+                onClick={() => {
+                  setSubmited(false);
+                  setValues("");
+                }}
               >
                 Make another appointment
               </Link>
