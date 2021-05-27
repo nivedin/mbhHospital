@@ -12,12 +12,12 @@ function Footer() {
           <p>
             <span>24/7 Emergency</span>
             <span>:</span>
-            <span>9526903838</span>
+            <a href="tel:9526903838">9526903838</a>
           </p>
           <p className="helpDeskNum">
             <span>Help Desk</span>
             <span>: </span>
-            <span> 04832734543</span>
+            <a href="tel:04832883333"> 04832883333</a>
           </p>
         </div>
         <div className="rightRow1">

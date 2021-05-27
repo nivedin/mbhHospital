@@ -21,6 +21,14 @@ function Home() {
                   <strong>care.</strong>{" "}
                 </Fade>
               </p>
+              <p className="headAccredited">
+                <Fade bottom cascade>
+                  <strong>NABL Accredited and ICMR Approved laboratory</strong>
+                </Fade>
+                <Fade bottom cascade>
+                  <img src="/images/accreditedLogo.png" alt="accriditedLogo" />
+                </Fade>
+              </p>
               <div className="mobAlign">
                 <Link to="/appointment" className="ctaBtn">
                   Book Appointment
@@ -46,6 +54,9 @@ function Home() {
           <div className="rightContainer">
             {/* <img src="/images/heroMain.png" alt="hero-mbh-hospital" /> */}
           </div>
+        </section>
+        <section className="imgSection">
+          <img src="/images/mbh_1.png" alt="mbh_img" />
         </section>
         <section className="covidDetails">
           <Fade cascade bottom>
@@ -127,6 +138,18 @@ function Home() {
               </Link>
             </div>
           </Fade>
+        </section>
+
+        <section className="imgSection">
+          <iframe
+            width="100%"
+            height="615"
+            src="https://www.youtube.com/embed/-B8PapNi7s4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </section>
 
         <section className="facilites">

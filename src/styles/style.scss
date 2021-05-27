@@ -373,9 +373,9 @@ footer {
             font-weight: 600;
             color: $black;
           }
-          &:nth-child(3) {
-            margin-left: 15px;
-          }
+        }
+        :nth-child(3) {
+          margin-left: 15px;
         }
       }
       .helpDeskNum {

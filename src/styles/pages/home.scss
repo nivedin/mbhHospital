@@ -74,9 +74,31 @@
             font-weight: 600;
           }
         }
+        .headAccredited {
+          margin-top: 10px;
+          display: flex;
+          align-items: center;
+          width: 43%;
+          @media only screen and (max-width: 700px) {
+            width: 90%;
+            flex-direction: column;
+            gap: 10px;
+          }
+          strong {
+            color: $black;
+          }
+          img {
+            width: 60px;
+            @media only screen and (max-width: 700px) {
+              width: 80px;
+            }
+          }
+        }
         .mobAlign {
-          margin: 0 auto;
-          width: 100%;
+          @media only screen and (max-width: 700px) {
+            width: 90%;
+            margin: 0 auto 30px auto;
+          }
         }
         .ctaBtn {
           margin-top: 32px;
@@ -149,6 +171,22 @@
         background: url("./assets/heroImg2.png");
         background-repeat: no-repeat;
         background-size: cover;
+      }
+    }
+    .imgSection {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      img {
+        width: 655px;
+        margin: 0 auto;
+        transition: all 0.25s linear;
+        &:hover {
+          transform: scale(1.03);
+        }
+        @media only screen and (max-width: 700px) {
+          width: 100%;
+        }
       }
     }
     .covidDetails {

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import emailjs from "emailjs-com";
+// import emailjs from "emailjs-com";
 import departmenDoctors from "../util/departmentDoctors";
 
 function Appointment() {
@@ -12,11 +12,12 @@ function Appointment() {
     department: "",
     doctor: "",
     date: "",
+    time: "",
     phoneNumber: "",
   });
   const [isFormSubmited, setSubmited] = useState(false);
 
-  const { name, department, doctor, date, phoneNumber } = values;
+  const { name, department, doctor, date, time, phoneNumber } = values;
 
   useEffect(() => {
     departmenDoctors.forEach((departmenDoctor, i) => {
@@ -48,24 +49,43 @@ function Appointment() {
       doctor: doctorRef.current.value,
       department: departmentRef.current.value,
     });
-    // emailjs
-    //   .sendForm(
-    //     "gmail",
-    //     "YOUR_TEMPLATE_ID",
-    //     e.target,
-    //     "user_GVZ6fF8KzeSjL0wqYtwKR"
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(result.text);
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //     }
-    //   );
+
+    let emailData = {
+      name: name,
+      doctor: doctorRef.current.value,
+      department: department,
+      date: date,
+      time: time,
+      phoneNumber: phoneNumber,
+    };
+    console.log(emailData);
+    ////new////
+    const data = {
+      service_id: "gmail",
+      template_id: "template_3x9s8cr",
+      user_id: "user_GVZ6fF8KzeSjL0wqYtwKR",
+      template_params: emailData,
+    };
+
+    // fetch("https://api.emailjs.com/api/v1.0/email/send", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //     Accept: "application/json",
+    //   },
+    //   body: JSON.stringify(data),
+    // }).then(
+    //   (result) => {
+    //     console.log(result.text);
+    //   },
+    //   (error) => {
+    //     console.log(error.text);
+    //   }
+    // );
+
+    ////new////
     window.scrollTo(0, 0);
     setSubmited(true);
-    //console.log("values", values);
   };
 
   return (
@@ -114,7 +134,7 @@ function Appointment() {
               <div className="form-group">
                 <label htmlFor="doctors">Select Doctor</label>
                 <select
-                  name="doctors"
+                  name="doctor"
                   id="doc"
                   required
                   ref={doctorRef}
@@ -148,10 +168,22 @@ function Appointment() {
                 />
               </div>
               <div className="form-group">
+                <label htmlFor="name">Select Time</label>
+                <input
+                  type="time"
+                  name="time"
+                  required
+                  value={time}
+                  onChange={(e) =>
+                    setValues({ ...values, time: e.target.value })
+                  }
+                />
+              </div>
+              <div className="form-group">
                 <label htmlFor="name">Phone Number</label>
                 <input
                   type="tel"
-                  name="phone_number"
+                  name="phoneNumber"
                   required
                   value={phoneNumber}
                   onChange={(e) =>
@@ -183,14 +215,18 @@ function Appointment() {
                       <span>{department}</span>
                     </div>
                     <div>
-                      <span>Phone : </span>
-                      <span>{phoneNumber}</span>
+                      <span>Time : </span>
+                      <span>{time}</span>
                     </div>
                   </div>
                   <div className="rowDiv">
                     <div>
                       <span>Doctor : </span>
                       <span>{doctor}</span>
+                    </div>
+                    <div>
+                      <span>Phone : </span>
+                      <span>{phoneNumber}</span>
                     </div>
                   </div>
                 </div>
