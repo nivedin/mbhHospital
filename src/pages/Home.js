@@ -144,7 +144,7 @@ function Home() {
           <iframe
             width="50%"
             height="415"
-            src="https://www.youtube.com/embed/-DpgnWvGfRcc"
+            src="https://www.youtube.com/embed/DpgnWvGfRcc"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
