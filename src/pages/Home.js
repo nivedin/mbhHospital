@@ -140,10 +140,10 @@ function Home() {
           </Fade>
         </section>
 
-        <section className="imgSection">
+        <section className="videoSection">
           <iframe
-            width="100%"
-            height="615"
+            width="50%"
+            height="415"
             src="https://www.youtube.com/embed/-B8PapNi7s4"
             title="YouTube video player"
             frameborder="0"

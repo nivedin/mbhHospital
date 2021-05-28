@@ -173,6 +173,7 @@
         background-size: cover;
       }
     }
+
     .imgSection {
       min-height: 100vh;
       display: grid;
@@ -189,6 +190,7 @@
         }
       }
     }
+
     .covidDetails {
       min-height: 100vh;
       padding: 8% 0 2% 0;
@@ -358,6 +360,17 @@
             color: #fff;
             border: 3px solid $blue;
           }
+        }
+      }
+    }
+
+    .videoSection {
+      min-height: 80vh;
+      display: grid;
+      place-items: center;
+      @media only screen and (max-width: 700px) {
+        iframe {
+          width: 100% !important;
         }
       }
     }

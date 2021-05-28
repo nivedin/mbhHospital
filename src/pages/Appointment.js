@@ -58,7 +58,7 @@ function Appointment() {
       time: time,
       phoneNumber: phoneNumber,
     };
-    console.log(emailData);
+    //console.log(emailData);
     ////new////
     const data = {
       service_id: "gmail",
@@ -67,21 +67,21 @@ function Appointment() {
       template_params: emailData,
     };
 
-    // fetch("https://api.emailjs.com/api/v1.0/email/send", {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //     Accept: "application/json",
-    //   },
-    //   body: JSON.stringify(data),
-    // }).then(
-    //   (result) => {
-    //     console.log(result.text);
-    //   },
-    //   (error) => {
-    //     console.log(error.text);
-    //   }
-    // );
+    fetch("https://api.emailjs.com/api/v1.0/email/send", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(data),
+    }).then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
 
     ////new////
     window.scrollTo(0, 0);
