@@ -14,10 +14,11 @@ function Appointment() {
     date: "",
     time: "",
     phoneNumber: "",
+    email: "",
   });
   const [isFormSubmited, setSubmited] = useState(false);
 
-  const { name, department, doctor, date, time, phoneNumber } = values;
+  const { name, department, doctor, date, time, phoneNumber, email } = values;
 
   useEffect(() => {
     departmenDoctors.forEach((departmenDoctor, i) => {
@@ -57,6 +58,7 @@ function Appointment() {
       date: date,
       time: time,
       phoneNumber: phoneNumber,
+      email: email,
     };
     //console.log(emailData);
     ////new////
@@ -191,6 +193,17 @@ function Appointment() {
                   }
                 />
               </div>
+              <div className="form-group">
+                <label htmlFor="name">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  value={email}
+                  onChange={(e) =>
+                    setValues({ ...values, email: e.target.value })
+                  }
+                />
+              </div>
               <button type="submit">Confirm Appointment</button>
             </form>
           ) : (
@@ -227,6 +240,12 @@ function Appointment() {
                     <div>
                       <span>Phone : </span>
                       <span>{phoneNumber}</span>
+                    </div>
+                  </div>
+                  <div className="rowDiv">
+                    <div>
+                      <span>Email : </span>
+                      <span>{email}</span>
                     </div>
                   </div>
                 </div>
