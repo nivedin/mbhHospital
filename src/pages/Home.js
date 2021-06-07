@@ -35,18 +35,9 @@ function Home() {
                 </Link>
 
                 <div className="mobDisplay">
-                  <span
-                    onClick={() =>
-                      window.scrollTo({
-                        top: document.body.scrollHeight,
-                        left: 0,
-                        behavior: "smooth",
-                      })
-                    }
-                    className="ctaBtn"
-                  >
+                  <Link to="/contact" className="ctaBtn">
                     Contact Us
-                  </span>
+                  </Link>
                 </div>
               </div>
             </Fade>

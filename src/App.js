@@ -5,7 +5,6 @@ import Department from "./pages/Department";
 import Facilities from "./pages/Facilities";
 import Home from "./pages/Home";
 import Careers from "./pages/Careers";
-// import Contact from "./pages/Contact";
 import Header from "./components/Common/Header";
 import FloatingEmergency from "./components/Common/FloatingEmergency";
 import Footer from "./components/Common/Footer";
@@ -13,6 +12,7 @@ import Appointment from "./pages/Appointment";
 import Application from "./pages/Application";
 import ScrollToTop from "./components/Common/ScrollToTop";
 import Gallery from "./pages/Gallery";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -36,9 +36,9 @@ function App() {
           <Route exact path="/careers">
             <Careers />
           </Route>
-          {/* <Route exact path="/contact">
+          <Route exact path="/contact">
             <Contact />
-          </Route> */}
+          </Route>
           <Route exact path="/appointment">
             <Appointment />
           </Route>

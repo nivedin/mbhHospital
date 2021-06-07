@@ -59,6 +59,11 @@ function Footer() {
                 Departments
               </NavLink>
             </li>
+            <li>
+              <NavLink exact to="/contact" activeClassName="active-link">
+                Contact
+              </NavLink>
+            </li>
           </ul>
         </div>
         <div className="socialLinkConatiner">

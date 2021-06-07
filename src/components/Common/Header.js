@@ -112,18 +112,9 @@ function Header() {
           </div>
           {location.pathname === "/" ? (
             !activeNav ? (
-              <span
-                className="contactUsBtn"
-                onClick={() =>
-                  window.scrollTo({
-                    top: document.body.scrollHeight,
-                    left: 0,
-                    behavior: "smooth",
-                  })
-                }
-              >
+              <Link className="contactUsBtn" to="/contact">
                 Contact Us
-              </span>
+              </Link>
             ) : (
               <Link to="/appointment" className="bookAptBtn">
                 Book Appointment
@@ -189,6 +180,15 @@ function Header() {
                 activeClassName="active-link"
               >
                 Careers
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                onClick={() => setOpenNav(!isNavOpen)}
+                to="/contact"
+                activeClassName="active-link"
+              >
+                Contact
               </NavLink>
             </li>
             <li className="bookAptBtn">
