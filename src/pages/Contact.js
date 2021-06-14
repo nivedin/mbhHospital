@@ -22,30 +22,30 @@ function Contact() {
       subject: subject,
       message: message,
     };
-    console.log(emailData);
+    //console.log(emailData);
     ////new////
-    // const data = {
-    //   service_id: "gmail",
-    //   template_id: "template_3x9s8cr",
-    //   user_id: "user_GVZ6fF8KzeSjL0wqYtwKR",
-    //   template_params: emailData,
-    // };
+    const data = {
+      service_id: "gmail",
+      template_id: "template_lir9ma4",
+      user_id: "user_GVZ6fF8KzeSjL0wqYtwKR",
+      template_params: emailData,
+    };
 
-    // fetch("https://api.emailjs.com/api/v1.0/email/send", {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //     Accept: "application/json",
-    //   },
-    //   body: JSON.stringify(data),
-    // }).then(
-    //   (result) => {
-    //     console.log(result.text);
-    //   },
-    //   (error) => {
-    //     console.log(error.text);
-    //   }
-    // );
+    fetch("https://api.emailjs.com/api/v1.0/email/send", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(data),
+    }).then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
 
     ////new////
     window.scrollTo(0, 0);
