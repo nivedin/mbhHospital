@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
+import emailjs from "emailjs-com";
 
 function Application() {
   let { id } = useParams();
@@ -9,6 +10,7 @@ function Application() {
     phoneNumber: "",
     role: "",
     description: "",
+    resume: "",
   });
   const [isFormSubmited, setSubmited] = useState(false);
 
@@ -16,49 +18,68 @@ function Application() {
     setValues({ ...values, role: id });
   }, []);
 
-  const { name, phoneNumber, role, description } = values;
+  const { name, phoneNumber, role, description, resume } = values;
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    let emailData = {
-      name: name,
-      phoneNumber: phoneNumber,
-      role: role,
-      description: description,
-    };
-    console.log(emailData);
+    // toBase64(resume).then((dataUri) => {
+    //   setValues({ ...values, resume: dataUri });
+    // });
+    // let emailData = {
+    //   name: name,
+    //   phoneNumber: phoneNumber,
+    //   role: role,
+    //   description: description,
+    //   resume: resume,
+    // };
+    // console.log(emailData);
     ////new////
-    const data = {
-      service_id: "gmail",
-      template_id: "template_h7yv5wb",
-      user_id: "user_GVZ6fF8KzeSjL0wqYtwKR",
-      template_params: emailData,
-    };
+    // const data = {
+    //   service_id: "gmail",
+    //   template_id: "template_h7yv5wb",
+    //   user_id: "user_GVZ6fF8KzeSjL0wqYtwKR",
+    //   template_params: e.target,
+    // };
 
-    fetch("https://api.emailjs.com/api/v1.0/email/send", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify(data),
-    }).then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
+    // fetch("https://api.emailjs.com/api/v1.0/email/send", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //     Accept: "application/json",
+    //   },
+    //   body: data,
+    // }).then(
+    //   (result) => {
+    //     console.log(result.text);
+    //   },
+    //   (error) => {
+    //     console.log(error.text);
+    //   }
+    // );
+    emailjs
+      .sendForm(
+        "gmail",
+        "template_h7yv5wb",
+        e.target,
+        "user_GVZ6fF8KzeSjL0wqYtwKR"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          window.scrollTo(0, 0);
+          setValues({
+            name: "",
+            phoneNumber: "",
+            role: "",
+          });
+          setSubmited(true);
+        },
+        (error) => {
+          alert(error.text);
+        }
+      );
 
     ////new////
-    window.scrollTo(0, 0);
-    setValues({
-      name: "",
-      phoneNumber: "",
-      role: "",
-    });
-    setSubmited(true);
   };
 
   return (
@@ -67,7 +88,7 @@ function Application() {
         {!isFormSubmited && <h1>Application</h1>}
         <div className="formContainer">
           {!isFormSubmited ? (
-            <form onSubmit={handleSubmit}>
+            <form enctype="multipart/form-data" onSubmit={handleSubmit}>
               <div className="form-group">
                 <label htmlFor="name">Your Name</label>
                 <input
@@ -103,7 +124,18 @@ function Application() {
                   }
                 />
               </div>
-              <input readOnly type="text" hidden value={role} />
+              <div className="form-group">
+                <label htmlFor="name">Upload Resume</label>
+                <input
+                  type="file"
+                  name="resume"
+                  onChange={(e) => {
+                    setValues({ ...values, resume: e.target.files[0] });
+                  }}
+                />
+                <small>Please upload file size less than 500kb.</small>
+              </div>
+              <input readOnly type="text" name="role" hidden value={role} />
               <button type="submit">Confirm Application</button>
             </form>
           ) : (
