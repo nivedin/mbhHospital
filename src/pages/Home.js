@@ -101,7 +101,7 @@ function Home() {
             <p>
               <em>Get to know us better!</em>
               <br />{" "}
-              <strong style={{ color: "#005ea4" }}>MB Hospital LLP</strong> is
+              <strong style={{ color: "#005ea4" }}>MBH Hospital LLP</strong> is
               an accomplished health care facility with staffs who are adroit in
               their abilities to provide you with outstanding service. It was
               founded in 1989 with an aim to promote wellness and provide

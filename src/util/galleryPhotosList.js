@@ -19,52 +19,52 @@ const galleryPhotosList = [
     id: 5,
     imgSrc: "/images/gallery/gallery5.png",
   },
+  // {
+  //   id: 6,
+  //   imgSrc: "/images/gallery/gallery6.png",
+  // },
   {
     id: 6,
-    imgSrc: "/images/gallery/gallery6.png",
-  },
-  {
-    id: 7,
     imgSrc: "/images/gallery/gallery7.png",
   },
   {
-    id: 8,
+    id: 7,
     imgSrc: "/images/gallery/gallery8.png",
   },
+  // {
+  //   id: 9,
+  //   imgSrc: "/images/gallery/gallery9.png",
+  // },
   {
-    id: 9,
-    imgSrc: "/images/gallery/gallery9.png",
-  },
-  {
-    id: 10,
+    id: 8,
     imgSrc: "/images/gallery/gallery10.png",
   },
   {
-    id: 11,
+    id: 9,
     imgSrc: "/images/gallery/gallery11.png",
   },
   {
-    id: 12,
+    id: 10,
     imgSrc: "/images/gallery/gallery12.png",
   },
   {
-    id: 13,
+    id: 11,
     imgSrc: "/images/gallery/gallery13.png",
   },
   {
-    id: 14,
+    id: 12,
     imgSrc: "/images/gallery/gallery14.png",
   },
+  // {
+  //   id: 15,
+  //   imgSrc: "/images/gallery/gallery15.png",
+  // },
   {
-    id: 15,
-    imgSrc: "/images/gallery/gallery15.png",
-  },
-  {
-    id: 16,
+    id: 13,
     imgSrc: "/images/gallery/gallery16.png",
   },
   {
-    id: 17,
+    id: 14,
     imgSrc: "/images/gallery/gallery17.png",
   },
 ];

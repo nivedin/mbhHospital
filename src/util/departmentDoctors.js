@@ -18,10 +18,10 @@ const dptDoctors = [
   },
   {
     id: "3",
-    department: "PAEDIATRIC DEPARTMENT",
+    department: "PEDIATRIC DEPARTMENT",
     doctors: ["Dr. Manoj Kumar -MBBS,MD", "Dr. Munir.U.A - MBBS,MD"],
     description:
-      "Paediatric dept at MB Hospital houses trained and experienced medical professionals dedicated to providing high quality healthcare for children.",
+      "Pediatric dept at MB Hospital houses trained and experienced medical professionals dedicated to providing high quality healthcare for children.",
   },
   {
     id: "4",
@@ -36,10 +36,10 @@ const dptDoctors = [
   },
   {
     id: "5",
-    department: "ANAESTHESIA DEPARTMENT",
+    department: "ANESTHESIA DEPARTMENT",
     doctors: ["Dr. Antony Daniel - MBBS,DA", "Dr. Razaq Khan- MBBS, DA"],
     description:
-      "Anaesthetists at MB Hospital deliver advanced care to patients in complex medical procedures.",
+      "Anesthetists at MB Hospital deliver advanced care to patients in complex medical procedures.",
   },
   {
     id: "6",
