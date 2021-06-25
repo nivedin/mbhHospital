@@ -143,6 +143,13 @@ const dptDoctors = [
     description:
       "The trained microbiologists at MB Hospital are experts in clinical management and study of infectious agents. ",
   },
+  {
+    id: "19",
+    department: "PSYCHIATRY DEPARTMENT ",
+    doctors: ["Dr. NASLA M.T  MBBS, DNB PSYCHIATRY"],
+    description:
+      "The psychiatry specialists at MB Hospital aid people finding it difficult to cope with life situations through professional counselling and treatment measures.",
+  },
 ];
 
 export default dptDoctors;

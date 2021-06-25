@@ -23,11 +23,16 @@ function Home() {
               </p>
               <p className="headAccredited">
                 <Fade bottom cascade>
-                  <strong>NABL Accredited and ICMR Approved laboratory</strong>
+                  <strong>NABH and NABL Accredited and ICMR Approved laboratory</strong>
+                </Fade>
+               <div className="accrlogoContainer">
+               <Fade bottom cascade>
+                  <img src="/images/accreditedLogo.png" alt="NABLaccriditedLogo" />
                 </Fade>
                 <Fade bottom cascade>
-                  <img src="/images/accreditedLogo.png" alt="accriditedLogo" />
+                  <img src="/images/NABH.jpeg" alt="NABHaccriditedLogo" />
                 </Fade>
+               </div>
               </p>
               <div className="mobAlign">
                 <Link to="/appointment" className="ctaBtn">

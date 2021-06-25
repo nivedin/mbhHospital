@@ -68,8 +68,11 @@ function Footer() {
         </div>
         <div className="socialLinkConatiner">
           <div className="accreditedImg">
-            <img src="/images/accreditedLogo.png" alt="accriditedLogo" />
-            <span>NABL Accredited and ICMR Approved laboratory</span>
+           <div className="footerAcrrLogoContainer">
+           <img src="/images/accreditedLogo.png" alt="accriditedLogo" />
+            <img src="/images/NABH.jpeg" alt="NABHaccriditedLogo" />
+           </div>
+            <span>NABH and NABL Accredited and ICMR Approved laboratory</span>
           </div>
           <div>
             <p>Follow Us</p>
