@@ -72,26 +72,28 @@
           strong {
             color: $blue;
             font-weight: 600;
+            word-break: break-all;
+            word-wrap: break-word;
           }
         }
         .headAccredited {
           margin-top: 10px;
           display: flex;
           align-items: center;
-          width: 62%;
+          width: 70%;
+          gap: 20px;
           @media only screen and (max-width: 700px) {
             width: 90%;
             flex-direction: column;
-            gap: 10px;
           }
           strong {
             color: $black;
             word-break: break-all;
           }
-          .accrlogoContainer{
+          .accrlogoContainer {
             display: flex;
             align-items: center;
-            gap: 20px;
+            gap: 15px;
           }
           img {
             width: 60px;
@@ -181,18 +183,105 @@
     }
 
     .imgSection {
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      img {
-        width: 655px;
-        margin: 0 auto;
-        transition: all 0.25s linear;
-        &:hover {
-          transform: scale(1.03);
-        }
+      //min-height: 100vh;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      // img {
+      //   width: 655px;
+      //   margin: 0 auto;
+      //   transition: all 0.25s linear;
+      //   &:hover {
+      //     transform: scale(1.03);
+      //   }
+      //   @media only screen and (max-width: 700px) {
+      //     width: 100%;
+      //   }
+      // }
+      .galleryCarousel {
+        margin: 120px 0;
         @media only screen and (max-width: 700px) {
-          width: 100%;
+          margin: 80px 0;
+        }
+        div {
+          height: 70vh;
+        }
+        img {
+          height: 100%;
+          max-width: 100%;
+          object-fit: contain;
+          border-radius: 10px;
+          @media only screen and (max-width: 700px) {
+            max-width: 100%;
+          }
+        }
+        .slick-slider {
+          &:hover {
+            .slick-prev {
+              background: rgba(151, 151, 151, 0.568);
+            }
+            .slick-next {
+              background: rgba(185, 185, 185, 0.753);
+            }
+          }
+        }
+        .slick-prev {
+          left: 0 !important;
+          height: 100%;
+          width: 96px;
+          transition: all 0.25s linear;
+          background: rgba(27, 27, 27, 0);
+          z-index: 1;
+          @media only screen and (max-width: 700px) {
+            width: 36px;
+          }
+          &::before {
+            font-size: 45px;
+            @media only screen and (max-width: 700px) {
+              font-size: 30px;
+            }
+          }
+        }
+        .slick-next {
+          right: 0;
+          height: 100%;
+          width: 96px;
+          transition: all 0.25s linear;
+          background: rgba(32, 32, 32, 0);
+          @media only screen and (max-width: 700px) {
+            width: 36px;
+          }
+          &::before {
+            font-size: 45px;
+            @media only screen and (max-width: 700px) {
+              font-size: 30px;
+            }
+          }
+        }
+        .slick-list {
+          overflow: visible;
+          @media only screen and (max-width: 700px) {
+            overflow: hidden;
+          }
+        }
+        .slick-slide {
+          transition: all 0.3s linear;
+          overflow: visible;
+          border-radius: 10px;
+          cursor: pointer;
+          @media only screen and (max-width: 700px) {
+            overflow: hidden;
+            opacity: 1 !important;
+          }
+          div:focus-visible {
+            outline: none !important;
+          }
+        }
+        .slick-center.slick-current {
+          opacity: 1 !important;
+          transform: translateY(-20px) scale(1.1);
+          border-radius: 10px;
+          transition: all 0.3s linear;
         }
       }
     }

@@ -10,7 +10,6 @@ function Gallery() {
   const [isLightBoxOpen, setLightboxOpen] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
 
-  console.log(isLightBoxOpen);
 
   const settings = {
     autoplay: true,

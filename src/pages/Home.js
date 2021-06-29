@@ -1,8 +1,59 @@
+import { useState } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Lightbox from "react-image-lightbox";
+import "react-image-lightbox/style.css";
 import { Link } from "react-router-dom";
 import CountUp from "react-countup";
 import Fade from "react-reveal/Fade";
+import homeNoticeList from "../util/homeNoticeList";
 
 function Home() {
+  const [isLightBoxOpen, setLightboxOpen] = useState(false);
+  const [photoIndex, setPhotoIndex] = useState(0);
+
+  const settings = {
+    autoplay: true,
+    autoplaySpeed: 2500,
+    pauseOnHover: true,
+    //className: "center",
+    //centerMode: true,
+    infinite: true,
+    //centerPadding: "100px",
+    //slidesToShow: 3,
+    swipeToSlide: true,
+    focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          centerMode: false,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 680,
+        settings: {
+          centerMode: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <div className="home">
       <div className="homeContainer">
@@ -22,17 +73,22 @@ function Home() {
                 </Fade>
               </p>
               <p className="headAccredited">
-                <Fade bottom cascade>
-                  <strong>NABH and NABL Accredited and ICMR Approved laboratory</strong>
-                </Fade>
-               <div className="accrlogoContainer">
-               <Fade bottom cascade>
-                  <img src="/images/accreditedLogo.png" alt="NABLaccriditedLogo" />
-                </Fade>
-                <Fade bottom cascade>
-                  <img src="/images/NABH.jpeg" alt="NABHaccriditedLogo" />
-                </Fade>
-               </div>
+                <strong>
+                  NABH Accredited <br />
+                  NABL and ICMR Approved laboratory
+                </strong>
+
+                <div className="accrlogoContainer">
+                  <Fade bottom cascade>
+                    <img src="/images/NABH.jpeg" alt="NABHaccriditedLogo" />
+                  </Fade>
+                  <Fade bottom cascade>
+                    <img
+                      src="/images/accreditedLogo.png"
+                      alt="NABLaccriditedLogo"
+                    />
+                  </Fade>
+                </div>
               </p>
               <div className="mobAlign">
                 <Link to="/appointment" className="ctaBtn">
@@ -52,7 +108,55 @@ function Home() {
           </div>
         </section>
         <section className="imgSection">
-          <img src="/images/mbh_1.png" alt="mbh_img" />
+          {/* <img src="/images/mbh_1.png" alt="mbh_img" /> */}
+          <div className="galleryCarousel">
+            <Slider {...settings}>
+              {homeNoticeList.map((galleryPhoto) => (
+                <div key={galleryPhoto.id}>
+                  <img
+                    onClick={() => {
+                      setLightboxOpen(true);
+                      setPhotoIndex(galleryPhoto.id - 1);
+                      document.body.style.overflow = "hidden";
+                    }}
+                    src={galleryPhoto.imgSrc}
+                    alt="MBH-Gallery-img"
+                  />
+                </div>
+              ))}
+            </Slider>
+            {isLightBoxOpen && (
+              <div className="lightBox">
+                {" "}
+                <Lightbox
+                  mainSrc={homeNoticeList[photoIndex].imgSrc}
+                  nextSrc={
+                    homeNoticeList[(photoIndex + 1) % homeNoticeList.length]
+                      .imgSrc
+                  }
+                  prevSrc={
+                    homeNoticeList[
+                      (photoIndex + homeNoticeList.length - 1) %
+                        homeNoticeList.length
+                    ].imgSrc
+                  }
+                  onCloseRequest={() => {
+                    setLightboxOpen(false);
+                    document.body.style.overflow = "auto";
+                  }}
+                  onMovePrevRequest={() =>
+                    setPhotoIndex(
+                      (photoIndex + homeNoticeList.length - 1) %
+                        homeNoticeList.length
+                    )
+                  }
+                  onMoveNextRequest={() =>
+                    setPhotoIndex((photoIndex + 1) % homeNoticeList.length)
+                  }
+                />
+              </div>
+            )}
+          </div>
         </section>
         <section className="covidDetails">
           <Fade cascade bottom>

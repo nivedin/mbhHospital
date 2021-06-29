@@ -146,7 +146,7 @@ const dptDoctors = [
   {
     id: "19",
     department: "PSYCHIATRY DEPARTMENT ",
-    doctors: ["Dr. NASLA M.T  MBBS, DNB PSYCHIATRY"],
+    doctors: ["Dr. NASLA M.T  MBBS, DPM PSYCHIATRY"],
     description:
       "The psychiatry specialists at MB Hospital aid people finding it difficult to cope with life situations through professional counselling and treatment measures.",
   },
