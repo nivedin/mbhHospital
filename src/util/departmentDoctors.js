@@ -100,7 +100,7 @@ const dptDoctors = [
   },
   {
     id: "13",
-    department: "PHYCHOLOGY DEPARTMENT",
+    department: "PSYCHOLOGY DEPARTMENT",
     doctors: ["Dr. Hamza - MSC"],
     description:
       "The psychology specialists at MB Hospital aid people finding it difficult to cope with life situations through professional counselling and treatment measures.",
