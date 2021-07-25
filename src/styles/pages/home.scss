@@ -158,7 +158,7 @@
       .rightContainer {
         flex: 0.5;
         min-width: 50%;
-        background: url("./assets/heroImg1.png");
+        background: url("./assets/heroImg11.png");
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
@@ -174,12 +174,12 @@
     }
     @keyframes bgAnim {
       from {
-        background: url("./assets/heroImg1.png");
+        background: url("./assets/heroImg11.png");
         background-size: cover;
         background-repeat: no-repeat;
       }
       to {
-        background: url("./assets/heroImg2.png");
+        background: url("./assets/heroImg22.png");
         background-repeat: no-repeat;
         background-size: cover;
       }

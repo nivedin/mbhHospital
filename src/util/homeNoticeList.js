@@ -5,7 +5,7 @@ const homeNoticeList = [
   },
   {
     id: 2,
-    imgSrc: "/images/notice/MBH COVID RATE 1.png",
+    imgSrc: "/images/notice/Room Rate 1.png",
   },
 ];
 

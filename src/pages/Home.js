@@ -327,7 +327,7 @@ function Home() {
               <Fade cascade bottom>
                 <div className="promoterPhoto">
                   <img
-                    src="/images/promoters/promoter-2.png"
+                    src="/images/promoters/promoter-22.png"
                     alt="promoter-MBH"
                   />
                   <span>Mr. E. Ummer Bava</span>
