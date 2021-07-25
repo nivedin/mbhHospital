@@ -158,13 +158,13 @@
       .rightContainer {
         flex: 0.5;
         min-width: 50%;
-        background: url("./assets/heroImg11.png");
+        //background: url("./assets/heroImg11.png");
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
         height: 100vh;
-        transition: all 0.25s ease-in-out;
-        animation: bgAnim 6s linear infinite alternate;
+        //transition: all 0.25s ease-in-out;
+        animation: bgAnim 6s ease-in-out infinite alternate;
         @media only screen and (max-width: 700px) {
           background-size: contain;
           width: 100%;
