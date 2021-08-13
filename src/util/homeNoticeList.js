@@ -23,10 +23,10 @@ const homeNoticeList = [
     id: 6,
     imgSrc: "/images/notice/labour room 2.png",
   },
-  {
-    id: 7,
-    imgSrc: "/images/notice/operation theather 2.png",
-  },
+  // {
+  //   id: 7,
+  //   imgSrc: "/images/notice/operation theather 2.png",
+  // },
 ];
 
 export default homeNoticeList;

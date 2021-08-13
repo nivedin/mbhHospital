@@ -2,10 +2,7 @@ const dptDoctors = [
   {
     id: "1",
     department: "GENERAL MEDICINE DEPARTMENT",
-    doctors: [
-      "Dr. Badharudheen.E (PHYSICIAN) - MBBS,MD,FID",
-      "Dr. Abdul Rahman Moosakutty. MBBS, MD",
-    ],
+    doctors: ["Dr. Badharudheen.E (PHYSICIAN) - MBBS,MD,FID"],
     description:
       "A well maintained department to provide you with best diagnosis and treatment of issues ranging from general health to chronic diseases.",
   },
