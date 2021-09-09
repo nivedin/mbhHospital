@@ -80,7 +80,10 @@ function Home() {
 
                 <div className="accrlogoContainer">
                   <Fade bottom cascade>
-                    <img src="/images/NABH.jpeg" alt="NABHaccriditedLogo" />
+                    <div className="nabhLogoNum">
+                      <img src="/images/NABH.jpeg" alt="NABHaccriditedLogo" />
+                      <small>PEH-2021-1498</small>
+                    </div>
                   </Fade>
                   <Fade bottom cascade>
                     <img
@@ -246,9 +249,9 @@ function Home() {
             height="415"
             src="https://www.youtube.com/embed/DpgnWvGfRCc"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </section>
 

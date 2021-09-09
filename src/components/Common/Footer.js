@@ -69,7 +69,10 @@ function Footer() {
         <div className="socialLinkConatiner">
           <div className="accreditedImg">
             <div className="footerAcrrLogoContainer">
-              <img src="/images/NABH.jpeg" alt="NABHaccriditedLogo" />
+              <span className="nabhLogoNum">
+                <img src="/images/NABH.jpeg" alt="NABHaccriditedLogo" />
+                <small>PEH-2021-1498</small>
+              </span>
               <img src="/images/accreditedLogo.png" alt="accriditedLogo" />
             </div>
             <span>

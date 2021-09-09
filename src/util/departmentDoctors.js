@@ -147,6 +147,13 @@ const dptDoctors = [
     description:
       "The psychiatry specialists at MB Hospital aid people finding it difficult to cope with life situations through professional counselling and treatment measures.",
   },
+  {
+    id: "20",
+    department: "DEPARTMENT OF PULMONARY MEDICINE",
+    doctors: ["Dr. SADAKKATHULLA UNAIS C  MBBS, MD PULMONARY MEDICINE"],
+    description:
+      "Pulmonary department at MB Hospital is dedicated to providing  comprehensive care to patients  on the prevention, diagnosis, and treatment of conditions that affect the lungs and respiratory tract.",
+  },
 ];
 
 export default dptDoctors;
