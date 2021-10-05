@@ -3,7 +3,7 @@ const dptDoctors = [
     id: "1",
     department: "GENERAL MEDICINE DEPARTMENT",
     doctors: [
-      "Dr. Badharudheen.E (PHYSICIAN) - MBBS,MD,FID",
+      "Dr. Badharudheen.E (PHYSICIAN) - MBBS, MD, FID",
       "Dr. Livin Skaria K - MBBS, MD",
     ],
     description:
@@ -12,14 +12,14 @@ const dptDoctors = [
   {
     id: "2",
     department: "GENERAL SURGERY  DEPARTMENT ",
-    doctors: ["Dr.Shiras Basheer. MBBS,MS"],
+    doctors: ["Dr.Shiras Basheer. MBBS, MS"],
     description:
       "The general surgery dept at MB Hospital aids you with appropriate surgical interventions at high quality and affordable costs.",
   },
   {
     id: "3",
     department: "PEDIATRIC DEPARTMENT",
-    doctors: ["Dr. Manoj Kumar -MBBS,MD", "Dr. Munir.U.A - MBBS,MD"],
+    doctors: ["Dr. Manoj Kumar - MBBS, MD", "Dr. Munir.U.A - MBBS, MD"],
     description:
       "Pediatric dept at MB Hospital houses trained and experienced medical professionals dedicated to providing high quality healthcare for children.",
   },
@@ -37,7 +37,7 @@ const dptDoctors = [
   {
     id: "5",
     department: "ANESTHESIA DEPARTMENT",
-    doctors: ["Dr. Antony Daniel - MBBS,DA", "Dr. Razaq Khan- MBBS, DA"],
+    doctors: ["Dr. Antony Daniel - MBBS, DA", "Dr. Razaq Khan- MBBS, DA"],
     description:
       "Anesthetists at MB Hospital deliver advanced care to patients in complex medical procedures.",
   },
@@ -45,7 +45,7 @@ const dptDoctors = [
     id: "6",
     department: "GYNAECOLOGY DEPARTMENT",
     doctors: [
-      "Dr. Binnu.KP - MBBS,DGO",
+      "Dr. Binnu.KP - MBBS, DGO",
       "Dr. Afreena Beeran. MBBS, DGO",
       "Dr. Mary Ligy. MBBS, MS.",
     ],
@@ -55,7 +55,7 @@ const dptDoctors = [
   {
     id: "7",
     department: "DERMATOLOGY DEPARTMENT ",
-    doctors: ["Dr. Beegam Sherjeena -MBBS,MD"],
+    doctors: ["Dr. Beegam Sherjeena - MBBS, MD"],
     description:
       "We house specialised doctors at MB Hospital to give you the best treatment and care for skin related problems.",
   },
@@ -73,21 +73,21 @@ const dptDoctors = [
   {
     id: "9",
     department: "UROLOGY DEPARTMENT ",
-    doctors: ["Dr. Adithya Shenoy - MBBS,MS,MCH,DNB URO"],
+    doctors: ["Dr. Adithya Shenoy - MBBS, MS, MCH, DNB URO"],
     description:
       "MB Hospital provides you with leading urology consultants and outstanding facilities for all conditions and treatment.",
   },
   {
     id: "10",
     department: "NEUROLOGY DEPAERTMENT ",
-    doctors: ["Dr. Sasikumar-MBBS,MD,DM,DNB"],
+    doctors: ["Dr. Sasikumar- MBBS, MD, DM, DNB"],
     description:
       "We offer specialised and subspecialised physicians and facilities and that provide outstanding care for brain and spine related disorders.",
   },
   {
     id: "11",
     department: "GASTROENTROLOGY DEPARTMENT  ",
-    doctors: ["Dr. Mohammed Sihab - MBBS,MD,DM"],
+    doctors: ["Dr. Mohammed Sihab - MBBS, MD, DM"],
     description:
       "Our consultants at the  gastroentrology department subspecialise in all areas of the digestive system. We also provide minimally invasive endoscopy facilities for wide range of diagnosis.",
   },
@@ -108,7 +108,7 @@ const dptDoctors = [
   {
     id: "14",
     department: "DENTAL DEPARTMENT ",
-    doctors: ["Dr. Mohammed Haris - BDS,MDS,DPH", "Dr. Aswathi. R. BDS"],
+    doctors: ["Dr. Mohammed Haris - BDS, MDS, DPH", "Dr. Aswathi. R. BDS"],
     description:
       "The dental team at MB Hospital is all equipped with latest technologies to serve your dental issues.",
   },
