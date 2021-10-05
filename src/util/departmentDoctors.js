@@ -2,7 +2,10 @@ const dptDoctors = [
   {
     id: "1",
     department: "GENERAL MEDICINE DEPARTMENT",
-    doctors: ["Dr. Badharudheen.E (PHYSICIAN) - MBBS,MD,FID"],
+    doctors: [
+      "Dr. Badharudheen.E (PHYSICIAN) - MBBS,MD,FID",
+      "Dr. Livin Skaria K - MBBS, MD",
+    ],
     description:
       "A well maintained department to provide you with best diagnosis and treatment of issues ranging from general health to chronic diseases.",
   },
@@ -149,7 +152,7 @@ const dptDoctors = [
   },
   {
     id: "20",
-    department: "DEPARTMENT OF PULMONARY MEDICINE",
+    department: "PULMONOLOGY DEPARTMENT",
     doctors: ["Dr. SADAKKATHULLA UNAIS C  MBBS, MD PULMONARY MEDICINE"],
     description:
       "Pulmonary department at MB Hospital is dedicated to providing  comprehensive care to patients  on the prevention, diagnosis, and treatment of conditions that affect the lungs and respiratory tract.",
