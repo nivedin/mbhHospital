@@ -13,6 +13,7 @@ import Application from "./pages/Application";
 import ScrollToTop from "./components/Common/ScrollToTop";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
+import MbhMetro from "./pages/MBH-Metro";
 
 function App() {
   return (
@@ -44,6 +45,9 @@ function App() {
           </Route>
           <Route exact path="/careers/:id">
             <Application />
+          </Route>
+          <Route exact path="/mbh-metro">
+            <MbhMetro />
           </Route>
           <Route path="" component={Home} />
         </Switch>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Lightbox from "react-image-lightbox";
@@ -8,51 +8,52 @@ import { Link } from "react-router-dom";
 import CountUp from "react-countup";
 import Fade from "react-reveal/Fade";
 import homeNoticeList from "../util/homeNoticeList";
+import Carousel from "../components/Common/Carousel";
 
 function Home() {
   const [isLightBoxOpen, setLightboxOpen] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
 
-  const settings = {
-    autoplay: true,
-    autoplaySpeed: 2500,
-    pauseOnHover: true,
-    //className: "center",
-    //centerMode: true,
-    infinite: true,
-    //centerPadding: "100px",
-    //slidesToShow: 3,
-    swipeToSlide: true,
-    focusOnSelect: true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 700,
-        settings: {
-          centerMode: false,
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 680,
-        settings: {
-          centerMode: false,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+  // const settings = {
+  //   autoplay: true,
+  //   autoplaySpeed: 2500,
+  //   pauseOnHover: true,
+  //   //className: "center",
+  //   //centerMode: true,
+  //   infinite: true,
+  //   //centerPadding: "100px",
+  //   //slidesToShow: 3,
+  //   swipeToSlide: true,
+  //   focusOnSelect: true,
+  //   responsive: [
+  //     {
+  //       breakpoint: 1024,
+  //       settings: {
+  //         slidesToShow: 3,
+  //         slidesToScroll: 3,
+  //         infinite: true,
+  //         dots: true,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 700,
+  //       settings: {
+  //         centerMode: false,
+  //         slidesToShow: 2,
+  //         slidesToScroll: 2,
+  //         initialSlide: 2,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 680,
+  //       settings: {
+  //         centerMode: false,
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1,
+  //       },
+  //     },
+  //   ],
+  // };
 
   return (
     <div className="home">
@@ -110,10 +111,27 @@ function Home() {
             {/* <img src="/images/heroMain.png" alt="hero-mbh-hospital" /> */}
           </div>
         </section>
+
+        <section className="mbhCardiacCenterSection">
+          <div className="cardiacCenterContainer">
+            <div className="imgContainer">
+              <img src="/images/mbhCardiac.png" alt="mbhCardiac" />
+            </div>
+            <Link className="cardiacBtn" to="/mbh-metro">
+              Explore MBH Metro
+            </Link>
+          </div>
+        </section>
+
         <section className="imgSection">
           {/* <img src="/images/mbh_1.png" alt="mbh_img" /> */}
           <div className="galleryCarousel">
-            <Slider {...settings}>
+            <Carousel
+              images={homeNoticeList}
+              setPhotoIndex={setPhotoIndex}
+              setLightboxOpen={setLightboxOpen}
+            />
+            {/* <Slider {...settings}>
               {homeNoticeList.map((galleryPhoto) => (
                 <div key={galleryPhoto.id}>
                   <img
@@ -127,7 +145,7 @@ function Home() {
                   />
                 </div>
               ))}
-            </Slider>
+            </Slider> */}
             {isLightBoxOpen && (
               <div className="lightBox">
                 {" "}
