@@ -81,7 +81,7 @@ const dptDoctors = [
     id: "10",
     department: "NEUROLOGY DEPAERTMENT ",
     // doctors: ["Dr. Sasikumar- MBBS, MD, DM, DNB"]
-    doctors: ["Dr. Chandrasekhar J- MBBS, MD, DM "],
+    doctors: ["Dr. Chandrasekhar J - MBBS, MD, DM "],
     description:
       "We offer specialised and subspecialised physicians and facilities and that provide outstanding care for brain and spine related disorders.",
   },
