@@ -29,7 +29,6 @@ const dptDoctors = [
     doctors: [
       "Dr. Iswarappa - MBBS,D ORTHO DNB ORTHO",
       "Dr. Asif Ansar. MBBS, D Ortho, DNB Ortho",
-      "Dr. Syam S Kumar. MBBS, MS Ortho",
     ],
     description:
       "Our consultants at the orthopaedic department of MB Hospital are subspecialised in their fields, having pioneered and perfected procedures including routine surgeries.",
@@ -46,7 +45,6 @@ const dptDoctors = [
     department: "GYNAECOLOGY DEPARTMENT",
     doctors: [
       "Dr. Binnu.KP - MBBS, DGO",
-      "Dr. Afreena Beeran. MBBS, DGO",
       "Dr. Mary Ligy. MBBS, MS.",
     ],
     description:
@@ -80,7 +78,6 @@ const dptDoctors = [
   {
     id: "10",
     department: "NEUROLOGY DEPAERTMENT ",
-    // doctors: ["Dr. Sasikumar- MBBS, MD, DM, DNB"]
     doctors: ["Dr. Chandrasekhar J - MBBS, MD, DM "],
     description:
       "We offer specialised and subspecialised physicians and facilities and that provide outstanding care for brain and spine related disorders.",
