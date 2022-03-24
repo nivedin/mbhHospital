@@ -43,10 +43,7 @@ const dptDoctors = [
   {
     id: "6",
     department: "GYNAECOLOGY DEPARTMENT",
-    doctors: [
-      "Dr. Binnu.KP - MBBS, DGO",
-      "Dr. Mary Ligy. MBBS, MS.",
-    ],
+    doctors: ["Dr. Binnu.KP - MBBS, DGO", "Dr. Mary Ligy. MBBS, MS."],
     description:
       "The gynaecology department at MB Hospital is staffed by clinicians specialised in the field.  We use the latest diagnostics and treatment to provide exceptional care for women’s health.",
   },
@@ -61,9 +58,9 @@ const dptDoctors = [
     id: "8",
     department: "CARDIOLOGY DEPARTMENT  ",
     doctors: [
-      "Dr. Shiji Thomas Varghese. MBBS, DNB MEDICINE,DNB CARDIOLOGY",
-      "Dr. Niyas Naseer. MBBS, MD, DM CARDIO",
-      "Dr. Suresh. S. MBBS, MD, DM CARDIO",
+      "Dr. Shiji Thomas Varghese - MBBS, DNB MEDICINE,DNB CARDIOLOGY",
+      "Dr. Niyas Naseer - MBBS, MD, DM CARDIO",
+      "Dr. Suresh. S - MBBS, MD, DM CARDIO",
     ],
     description:
       "We host an experienced cardiologist at MB Hospital, who is pioneering the techniques to treat the full range of adult cardiac conditions.",
@@ -71,7 +68,10 @@ const dptDoctors = [
   {
     id: "9",
     department: "UROLOGY DEPARTMENT ",
-    doctors: ["Dr. Adithya Shenoy - MBBS, MS, MCH, DNB URO"],
+    doctors: [
+      "Dr. Adithya Shenoy - MBBS, MS, MCH, DNB URO",
+      "Dr. Rahul Raveendran - MBBS, MS, MCH",
+    ],
     description:
       "MB Hospital provides you with leading urology consultants and outstanding facilities for all conditions and treatment.",
   },
@@ -144,14 +144,17 @@ const dptDoctors = [
   {
     id: "19",
     department: "PSYCHIATRY DEPARTMENT ",
-    doctors: ["Dr. NASLA M.T  MBBS, DPM PSYCHIATRY"],
+    doctors: [
+      "Dr. Nasla M.T  MBBS, DPM PSYCHIATRY",
+      "Dr. Abdu Salam O.K, MBBS, MD PSYCHIATRY",
+    ],
     description:
       "The psychiatry specialists at MB Hospital aid people finding it difficult to cope with life situations through professional counselling and treatment measures.",
   },
   {
     id: "20",
     department: "PULMONOLOGY DEPARTMENT",
-    doctors: ["Dr. SADAKKATHULLA UNAIS C  MBBS, MD PULMONARY MEDICINE"],
+    doctors: ["Dr. Sadakkathulla Unais C  MBBS, MD PULMONARY MEDICINE"],
     description:
       "Pulmonary department at MB Hospital is dedicated to providing  comprehensive care to patients  on the prevention, diagnosis, and treatment of conditions that affect the lungs and respiratory tract.",
   },
