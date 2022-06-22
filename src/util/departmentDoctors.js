@@ -11,8 +11,11 @@ const dptDoctors = [
   },
   {
     id: "2",
-    department: "GENERAL SURGERY  DEPARTMENT ",
-    doctors: ["Dr.Shiras Basheer. MBBS, MS"],
+    department: "GENERAL SURGERY DEPARTMENT ",
+    doctors: [
+      "Dr.Shiras Basheer. MBBS, MS",
+      "Dr.Arjun Raveendran. MBBS, MS, DNB",
+    ],
     description:
       "The general surgery dept at MB Hospital aids you with appropriate surgical interventions at high quality and affordable costs.",
   },
