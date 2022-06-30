@@ -95,7 +95,9 @@ const dptDoctors = [
   {
     id: "12",
     department: "ENT DEPARTMENT",
-    doctors: ["Dr. Hafeez Abdullah. MBBS, MS Ent"],
+    doctors: [
+      "Dr. Greeshma K Menon - MBBS, DNB (ENT), Fellowship in Endoscopic Sinus Surgery",
+    ],
     description:
       "The Ear-Nose-Throat team at MB Hospital carries out highly specialised treatment of disorders of the head and neck.",
   },
