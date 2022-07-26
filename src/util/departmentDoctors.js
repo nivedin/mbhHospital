@@ -31,7 +31,6 @@ const dptDoctors = [
     department: "ORTHOPEDIC DEPARTMENT",
     doctors: [
       "Dr. Iswarappa - MBBS,D ORTHO DNB ORTHO",
-      "Dr. Asif Ansar - MBBS, D Ortho, DNB Ortho",
       "Dr. Jithesh K - MBBS, D Ortho, DNB Ortho, FIFA Diploma in sports medicine",
     ],
     description:
@@ -125,10 +124,7 @@ const dptDoctors = [
   {
     id: "16",
     department: "RADIOLOGY DEPARTMENT ",
-    doctors: [
-      "Dr. Hafiz Mohamad. MBBS, MD Radiology",
-      "Dr. C. A. Kadeeja. MBBS,MD, DNB Radiology",
-    ],
+    doctors: ["Dr. Hafiz Mohamad. MBBS, MD Radiology"],
     description:
       "The radiology dept at MB Hospital uses state-of-the art imaging technology and facilities to carry out a wide range of investigations that plays a key role in the diagnosis of all cardiothoracic conditions.",
   },
@@ -159,10 +155,7 @@ const dptDoctors = [
   {
     id: "20",
     department: "PULMONOLOGY DEPARTMENT",
-    doctors: [
-      "Dr. Sadakkathulla Unais C - MBBS, MD PULMONARY MEDICINE",
-      "Dr. Afeena A - MBBS, DTCD",
-    ],
+    doctors: ["Dr. Afeena A - MBBS, DTCD"],
     description:
       "Pulmonary department at MB Hospital is dedicated to providing  comprehensive care to patients  on the prevention, diagnosis, and treatment of conditions that affect the lungs and respiratory tract.",
   },
