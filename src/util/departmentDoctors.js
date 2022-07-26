@@ -31,7 +31,8 @@ const dptDoctors = [
     department: "ORTHOPEDIC DEPARTMENT",
     doctors: [
       "Dr. Iswarappa - MBBS,D ORTHO DNB ORTHO",
-      "Dr. Asif Ansar. MBBS, D Ortho, DNB Ortho",
+      "Dr. Asif Ansar - MBBS, D Ortho, DNB Ortho",
+      "Dr. Jithesh K - MBBS, D Ortho, DNB Ortho, FIFA Diploma in sports medicine",
     ],
     description:
       "Our consultants at the orthopaedic department of MB Hospital are subspecialised in their fields, having pioneered and perfected procedures including routine surgeries.",
@@ -63,7 +64,6 @@ const dptDoctors = [
     doctors: [
       "Dr. Shiji Thomas Varghese - MBBS, DNB MEDICINE,DNB CARDIOLOGY",
       "Dr. Niyas Naseer - MBBS, MD, DM CARDIO",
-      "Dr. Suresh. S - MBBS, MD, DM CARDIO",
     ],
     description:
       "We host an experienced cardiologist at MB Hospital, who is pioneering the techniques to treat the full range of adult cardiac conditions.",
