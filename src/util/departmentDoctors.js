@@ -159,7 +159,10 @@ const dptDoctors = [
   {
     id: "20",
     department: "PULMONOLOGY DEPARTMENT",
-    doctors: ["Dr. Sadakkathulla Unais C  MBBS, MD PULMONARY MEDICINE"],
+    doctors: [
+      "Dr. Sadakkathulla Unais C - MBBS, MD PULMONARY MEDICINE",
+      "Dr. Afeena A - MBBS, DTCD",
+    ],
     description:
       "Pulmonary department at MB Hospital is dedicated to providing  comprehensive care to patients  on the prevention, diagnosis, and treatment of conditions that affect the lungs and respiratory tract.",
   },
