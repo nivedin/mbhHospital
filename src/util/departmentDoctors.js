@@ -124,7 +124,7 @@ const dptDoctors = [
   {
     id: "16",
     department: "RADIOLOGY DEPARTMENT ",
-    doctors: ["Dr. Hafiz Mohamad. MBBS, MD Radiology"],
+    doctors: ["Dr. C. A. Kadeeja. MBBS,MD, DNB Radiology"],
     description:
       "The radiology dept at MB Hospital uses state-of-the art imaging technology and facilities to carry out a wide range of investigations that plays a key role in the diagnosis of all cardiothoracic conditions.",
   },
