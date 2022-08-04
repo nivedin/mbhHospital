@@ -30,7 +30,8 @@ const dptDoctors = [
     id: "4",
     department: "ORTHOPEDIC DEPARTMENT",
     doctors: [
-      "Dr. Iswarappa - MBBS,D ORTHO DNB ORTHO",
+      "Dr. Iswarappa - MBBS, D Ortho, DNB Ortho",
+      "Dr. Muhammed Asif V.A - MBBS, MS Ortho",
       "Dr. Jithesh K - MBBS, D Ortho, DNB Ortho, FIFA Diploma in sports medicine",
     ],
     description:
@@ -46,7 +47,11 @@ const dptDoctors = [
   {
     id: "6",
     department: "GYNAECOLOGY DEPARTMENT",
-    doctors: ["Dr. Binnu.KP - MBBS, DGO", "Dr. Mary Ligy. MBBS, MS."],
+    doctors: [
+      "Dr. Binnu.KP - MBBS, DGO",
+      "Dr. Mary Ligy - MBBS, MS.",
+      "Dr. Sahidha Azeez - MBBS, MD, OBG",
+    ],
     description:
       "The gynaecology department at MB Hospital is staffed by clinicians specialised in the field.  We use the latest diagnostics and treatment to provide exceptional care for women’s health.",
   },
