@@ -50,7 +50,7 @@ const dptDoctors = [
     doctors: [
       "Dr. Binnu.KP - MBBS, DGO",
       "Dr. Mary Ligy - MBBS, MS.",
-      "Dr. Sahidha Azeez - MBBS, MD, OBG",
+      "Dr. Sahidha Azeez - MBBS, MD,OBG",
     ],
     description:
       "The gynaecology department at MB Hospital is staffed by clinicians specialised in the field.  We use the latest diagnostics and treatment to provide exceptional care for women’s health.",
