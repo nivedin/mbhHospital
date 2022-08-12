@@ -548,6 +548,20 @@ footer {
       margin: 10px 0;
       font-weight: 600;
     }
+    .privacyTerms{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+      a{
+        font-size: .82rem;
+        margin: 0;
+       
+      }
+    }
+    .poweredBy{
+      font-size: .8rem;
+    }
   }
 }
 

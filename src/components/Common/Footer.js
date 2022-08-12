@@ -102,7 +102,12 @@ function Footer() {
           &#169; 2021 <strong style={{ color: "#005ea4" }}>MBH</strong> All
           right reserved
         </p>
-        <p>
+        <p className="privacyTerms">
+          <a href="/privacy-policy">Privacy Policy</a>
+          <span>•</span>
+          <a href="/terms-use">Terms of Use</a>
+        </p>
+        <p className="poweredBy">
           Powered by <a href="https://sparkd.pro/">Sparkd</a>{" "}
         </p>
       </div>

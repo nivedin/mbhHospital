@@ -54,7 +54,7 @@ function App() {
           <Route exact path="/privacy-policy">
             <PrivacyPolicy />
           </Route>
-          <Route exact path="/terms-condition">
+          <Route exact path="/terms-use">
             <TermsCondition />
           </Route>
           <Route path="" component={Home} />
