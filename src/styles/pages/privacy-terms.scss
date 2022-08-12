@@ -1,0 +1,32 @@
+.privacy-terms {
+  padding: 10% 4% 14% 4%;
+  overflow-x: hidden;
+  .privacy-terms-container{
+    h1 {
+        font-size: 4rem;
+        font-weight: 400;
+        text-align: center;
+        @media only screen and (max-width: 700px) {
+          font-size: 2rem;
+        }
+      }
+      p{
+        padding: 50px 0;
+        font-size: 1rem;
+          line-height: 150%;
+          text-align: justify;
+          strong{
+            padding-top: 10px;
+            font-size: 1.5rem;
+            display: block;
+            @media only screen and (max-width: 700px) {
+                font-size: 1.25rem;
+              }
+        }
+          a{
+            color: $blue;
+          }
+      }
+  }
+  
+}
