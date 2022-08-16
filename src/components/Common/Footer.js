@@ -29,6 +29,13 @@ function Footer() {
               <MapSvg />
             </span>
           </a>
+          <p className="address">
+            MBH Hospital LLP, <br />
+            8/559, 562A, <br />
+            Varangode, Downhill P.O, <br />
+            Malappuram, Malappuram, Kerala, <br />
+            676519, India
+          </p>
         </div>
       </div>
       <div className="footerRow2">

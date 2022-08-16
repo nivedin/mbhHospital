@@ -354,7 +354,7 @@ footer {
     }
     .leftRow1 {
       @media only screen and (max-width: 700px) {
-        margin: 40px 00;
+        margin: 40px 0;
         width: 100%;
       }
       p {
@@ -432,6 +432,15 @@ footer {
           path {
             fill: #fff;
           }
+        }
+      }
+      .address {
+        margin: 20px 0;
+        font-weight: 500;
+        line-height: 140%;
+        @media only screen and (max-width: 700px) {
+          text-align: center;
+          margin: 40px 0 0 0;
         }
       }
     }
@@ -548,19 +557,18 @@ footer {
       margin: 10px 0;
       font-weight: 600;
     }
-    .privacyTerms{
+    .privacyTerms {
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 4px;
-      a{
-        font-size: .82rem;
+      a {
+        font-size: 0.82rem;
         margin: 0;
-       
       }
     }
-    .poweredBy{
-      font-size: .8rem;
+    .poweredBy {
+      font-size: 0.8rem;
     }
   }
 }
